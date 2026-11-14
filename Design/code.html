@@ -1,0 +1,642 @@
+<!DOCTYPE html><html class="dark" lang="en" rtrvr-mw-ready="1" rtrvr-gl-click="1" rtrvr-gl-input="1" rtrvr-gl-keydown="1" rtrvr-mw-busy="0" rtrvr-ls="5~hs,6~hs,8~hs,9~hs"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-container-highest":"#2d3449","surface-container-lowest":"#060e20","on-primary-container":"#eeefff","error-container":"#93000a","error":"#ffb4ab","on-surface":"#dae2fd","secondary-fixed-dim":"#4edea3","on-error-container":"#ffdad6","on-tertiary-fixed":"#410004","on-background":"#dae2fd","on-tertiary-fixed-variant":"#930013","primary-fixed-dim":"#b4c5ff","on-primary-fixed-variant":"#003ea8","primary-container":"#2563eb","secondary":"#4edea3","inverse-surface":"#dae2fd","surface-variant":"#2d3449","inverse-primary":"#0053db","secondary-container":"#00a572","outline":"#8d90a0","on-secondary-fixed-variant":"#005236","surface":"#0b1326","surface-bright":"#31394d","surface-tint":"#b4c5ff","on-tertiary-container":"#ffecea","secondary-fixed":"#6ffbbe","on-primary":"#002a78","surface-container-low":"#131b2e","outline-variant":"#434655","on-tertiary":"#68000a","surface-container-high":"#222a3d","on-primary-fixed":"#00174b","surface-dim":"#0b1326","primary-fixed":"#dbe1ff","primary":"#b4c5ff","surface-container":"#171f33","tertiary-fixed":"#ffdad7","on-secondary-fixed":"#002113","tertiary-fixed-dim":"#ffb3ad","on-error":"#690005","inverse-on-surface":"#283044","on-secondary":"#003824","tertiary-container":"#cf2c30","background":"#0b1326","on-surface-variant":"#c3c6d7","tertiary":"#ffb3ad"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{"space-md":"1rem","space-lg":"1.5rem","space-sm":"0.5rem","space-xl":"2.5rem","space-xs":"0.25rem",gutter:"1.5rem",margin:"2rem"},fontFamily:{"title-md":["Inter"],"body-sm":["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"],"code-badge":["JetBrains Mono"],"data-tabular":["JetBrains Mono"],"display-hero":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"label-caps":["Inter"],"body-md":["Inter"],"body-lg":["Inter"],"display-hero-mobile":["Plus Jakarta Sans"]},fontSize:{"title-md":["16px",{lineHeight:"24px",fontWeight:"600"}],"body-sm":["12px",{lineHeight:"18px",fontWeight:"400"}],"headline-lg-mobile":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"700"}],"code-badge":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"500"}],"data-tabular":["13px",{lineHeight:"20px",fontWeight:"400"}],"display-hero":["48px",{lineHeight:"56px",letterSpacing:"-0.02em",fontWeight:"800"}],"headline-sm":["18px",{lineHeight:"26px",fontWeight:"600"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.015em",fontWeight:"700"}],"headline-md":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"700"}],"label-caps":["11px",{lineHeight:"16px",letterSpacing:"0.08em",fontWeight:"700"}],"body-md":["14px",{lineHeight:"22px",fontWeight:"400"}],"body-lg":["16px",{lineHeight:"26px",fontWeight:"400"}],"display-hero-mobile":["32px",{lineHeight:"40px",letterSpacing:"-0.01em",fontWeight:"800"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,12~hs,13~hs,15~hs,23~hs,24~hs,49~hs"><header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface-container-lowest/95 backdrop-blur-md border-b border-outline-variant/40" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,12~hs,13~hs,15~hs,23~hs,24~hs,49~hs"><div class="h-20 max-w-[1440px] mx-auto px-margin flex items-center justify-between gap-space-lg" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,12~hs,13~hs,15~hs,23~hs,24~hs,49~hs"><div class="flex items-center gap-space-md shrink-0" rtrvr-ls="5~hs,6~hs,8~hs,9~hs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/ALJJyrB7P641_EkoKe_YoSXJoeDSXvNN0tXMChAXEm__M9siMwdYAxvqLEY1zbeU9odnRZJlEzheeMxCrCX92PBZy5vhOVbgQ9yASr4AmJHCcSt4KGIGZBkozBdmmz-gz54KjsxpRIvS2NMoCtHW9jK3DaYSTslYt5EKcdVCK08nUGMZKTy5ShITBp6xeSAHMs9ddAJIw5_Ss3bOMB6jGDMdaTYlJKWR5-dU4e6zraENChPOTpFCiWvGpenx3JkZ" rtrvr-ls="5~hs,6~hs,8~hs,9~hs" rtrvr-ro="38"><div class="flex flex-col" rtrvr-ls="5~hs,6~hs,8~hs,9~hs"><div class="flex items-center gap-space-xs" rtrvr-ls="5~hs,6~hs,8~hs,9~hs"><span class="font-headline-sm text-headline-sm uppercase tracking-wider text-primary font-bold" rtrvr-ls="5~hs,6~hs,8~hs,9~hs" rtrvr-ro="42">AB CHIP</span><span class="inline-block w-2 h-2 rounded-full bg-secondary" title="Factory Link Online" rtrvr-ls="5~hs,6~hs,8~hs,9~hs"></span></div><span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest" rtrvr-ls="5~hs,6~hs,8~hs,9~hs,49~hs" rtrvr-ro="42">LED &amp; Control Systems</span></div></div><nav class="hidden xl:flex items-center gap-space-lg h-full" data-active-classes="text-primary border-b-2 border-primary-container font-semibold" rtrvr-ls="5~hs,6~hs,8~hs,9~hs"><a aria-current="page" class="h-full flex items-center transition-colors text-primary border-b-2 border-primary-container font-semibold" data-path="home" href="#" rtrvr-ls="5~hs,6~hs,8~hs,9~hs,49~hs" rtrvr-ro="50">Home</a><a class="h-full flex items-center text-on-surface-variant hover:text-on-surface font-body-md text-body-md transition-colors" data-path="led-displays" href="#" rtrvr-ls="5~hs,6~hs,8~hs,9~hs,49~hs" rtrvr-ro="50">LED Displays</a><a class="h-full flex items-center text-on-surface-variant hover:text-on-surface font-body-md text-body-md transition-colors" data-path="control-systems" href="#" rtrvr-ls="5~hs,6~hs,8~hs,9~hs" rtrvr-ro="50">Control Systems</a><a class="h-full flex items-center text-on-surface-variant hover:text-on-surface font-body-md text-body-md transition-colors" data-path="video-processors" href="#" rtrvr-ls="5~hs,6~hs,8~hs,9~hs" rtrvr-ro="50">Video Processors</a><a class="h-full flex items-center text-on-surface-variant hover:text-on-surface font-body-md text-body-md transition-colors" data-path="accessories" href="#" rtrvr-ls="5~hs,6~hs,8~hs,9~hs" rtrvr-ro="50">Accessories</a><a class="h-full flex items-center text-on-surface-variant hover:text-on-surface font-body-md text-body-md transition-colors" data-path="technical-support" href="#" rtrvr-ls="5~hs,6~hs,8~hs,9~hs" rtrvr-ro="50">Technical Support</a><a class="h-full flex items-center text-on-surface-variant hover:text-on-surface font-body-md text-body-md transition-colors" data-path="contact" href="#" rtrvr-ls="5~hs,6~hs,8~hs,9~hs" rtrvr-ro="50">Contact</a></nav><div class="flex items-center gap-space-sm shrink-0" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,12~hs,13~hs,15~hs,23~hs,24~hs,49~hs"><button class="p-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded transition-colors" title="Search Catalog / Spec Sheets" type="button" rtrvr-ls="5~hs,6~hs,8~hs,9~hs" rtrvr-ro="38"><span class="material-symbols-outlined" rtrvr-ls="5~hs,6~hs,8~hs,9~hs" rtrvr-ro="42">search</span></button><button class="hidden sm:flex items-center gap-space-xs px-space-sm py-space-xs bg-surface-container border border-outline-variant/60 rounded text-on-surface-variant hover:text-on-surface hover:border-primary transition-colors text-body-sm font-body-sm" type="button" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,12~hs,13~hs,15~hs,23~hs,24~hs,49~hs" rtrvr-ro="38"><span class="material-symbols-outlined text-body-md">download</span><span class="font-code-badge text-code-badge" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,12~hs,13~hs,15~hs,23~hs,24~hs,49~hs" rtrvr-ro="42">Our Catalog</span></button><a class="inline-flex items-center justify-center px-space-md py-space-sm bg-primary-container hover:bg-primary-container/90 text-on-primary-container font-title-md text-title-md rounded font-semibold transition-all shadow-[0_4px_0_0_#060e20]" data-path="request-quote" href="#" rtrvr-ls="5~hs,6~hs,8~hs,9~hs" rtrvr-ro="50">Request a Quote</a></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,12~hs,13~hs,15~hs,23~hs,24~hs"><div class="flex flex-col w-full" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,12~hs,13~hs,15~hs,23~hs,24~hs">
+<!-- ==========================================
+       HERO SECTION: Industrial Split Precision
+       ========================================== -->
+<section class="relative w-full overflow-hidden bg-surface py-space-xl" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,12~hs,13~hs,15~hs,23~hs,24~hs,49~hs">
+<!-- CAD Blueprint Grid Overlay (inline subtle vector) -->
+<div class="absolute inset-0 pointer-events-none opacity-20" style="background-image: radial-gradient(circle, #434655 1px, transparent 1px); background-size: 24px 24px;"></div>
+<div class="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-primary-container/10 blur-[100px] pointer-events-none"></div>
+<div class="max-w-[1440px] mx-auto px-margin relative z-10" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,12~hs,13~hs,15~hs,23~hs,24~hs">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,12~hs,13~hs,15~hs,23~hs,24~hs,49~hs">
+<!-- Left Hero Content (Column Span: 7) -->
+<div class="lg:col-span-7 flex flex-col gap-space-md" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,12~hs,13~hs,15~hs,23~hs,24~hs,49~hs">
+<!-- Industrial Hardware Status Badge -->
+<div class="inline-flex items-center gap-space-xs self-start px-space-sm py-1 bg-surface-container-high rounded text-on-surface" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,23~hs,24~hs,49~hs">
+<span class="inline-block w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-code-badge text-code-badge uppercase tracking-wider text-on-surface-variant" rtrvr-ls="5~hs,6~hs,8~hs,9~hs,49~hs" rtrvr-ro="42">SHENZHEN ABCHIPLED TECH • INDUSTRIAL GRADE HARDWARE</span>
+
+</div>
+<!-- Main Technical Headline -->
+<div class="flex flex-col gap-space-xs" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,12~hs,13~hs,15~hs,23~hs">
+<h1 class="font-display-hero text-display-hero text-on-surface tracking-tight leading-[1.08]" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,12~hs,13~hs,15~hs,23~hs,49~hs" rtrvr-ro="42">
+              Next-Generation <span class="text-primary" rtrvr-ls="5~hs,6~hs,8~hs,9~hs,49~hs" rtrvr-ro="42">LED Displays</span> &amp; High-Level Control Systems
+            </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed mt-space-xs" rtrvr-ls="5~hs,6~hs,8~hs,9~hs">
+              Engineering carrier-grade synchronous/asynchronous sending architectures, 4K multi-window video processors, high-refresh receiving cards, and ultra-high-definition modular LED display cabinets for stadium arenas, smart billboard clusters, and critical command installations.
+            </p>
+</div>
+<!-- Action Hardware Triggers -->
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,12~hs,13~hs,15~hs,23~hs,24~hs,49~hs">
+<a class="inline-flex items-center gap-space-xs px-space-lg py-space-sm bg-primary-container hover:bg-primary-container/90 text-on-primary-container font-title-md text-title-md rounded font-semibold transition-all shadow-md" href="#selection-table" rtrvr-ls="5~hs,6~hs,8~hs,9~hs" rtrvr-ro="50">
+<span rtrvr-ls="5~hs,6~hs,8~hs,9~hs">Explore Product Catalog</span>
+<span class="material-symbols-outlined text-title-md" rtrvr-ls="5~hs,6~hs,8~hs,9~hs">arrow_forward</span>
+</a>
+<a class="inline-flex items-center gap-space-xs px-space-md py-space-sm bg-surface-container hover:bg-surface-container-high text-on-surface font-title-md text-title-md rounded transition-all" href="#ecosystem" rtrvr-ls="5~hs,6~hs,8~hs,9~hs,49~hs" rtrvr-ro="50">
+<span class="material-symbols-outlined text-primary" rtrvr-ls="5~hs,6~hs,8~hs,9~hs,49~hs">terminal</span>
+<span rtrvr-ls="5~hs,6~hs,8~hs,9~hs">Technical Spec &amp; SDK</span>
+</a>
+<div class="flex items-center gap-space-xs px-space-sm py-space-xs bg-surface-container-low rounded text-on-surface-variant" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,12~hs,13~hs,15~hs,23~hs,24~hs,49~hs">
+<span class="material-symbols-outlined text-secondary text-body-md">support_agent</span>
+<span class="font-code-badge text-code-badge" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,12~hs,13~hs,15~hs,23~hs,24~hs" rtrvr-ro="42">Contact US: +86-755-8823</span>
+</div>
+</div>
+<!-- Quick Hardware Metrics Spec Row -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-xs pt-space-md" rtrvr-ls="5~hs,6~hs,8~hs,9~hs,49~hs">
+<div class="flex flex-col p-space-sm bg-surface-container-lowest rounded" rtrvr-ls="5~hs,6~hs,8~hs,9~hs,49~hs">
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider" rtrvr-ls="5~hs,6~hs,8~hs,9~hs">Max Capacity</span>
+<span class="font-data-tabular text-headline-sm text-primary font-bold" rtrvr-ls="5~hs,6~hs,8~hs,9~hs">10.4M px</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant" rtrvr-ls="5~hs,6~hs,8~hs,9~hs,49~hs">HD-VP1620 Suite</span>
+</div>
+<div class="flex flex-col p-space-sm bg-surface-container-lowest rounded" rtrvr-ls="49~hs">
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider" rtrvr-ls="49~hs">Scan Modes</span>
+<span class="font-data-tabular text-headline-sm text-secondary font-bold" rtrvr-ls="49~hs">1/64 Scan</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant" rtrvr-ls="49~hs">Static to PWM IC</span>
+</div>
+<div class="flex flex-col p-space-sm bg-surface-container-lowest rounded" rtrvr-ls="5~hs,6~hs,8~hs,9~hs">
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">Video Frame Rate</span>
+<span class="font-data-tabular text-headline-sm text-on-surface font-bold">60Hz Real</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant" rtrvr-ls="5~hs,6~hs,8~hs,9~hs,49~hs">Hardware Hard Decode</span>
+</div>
+<div class="flex flex-col p-space-sm bg-surface-container-lowest rounded" rtrvr-ls="5~hs,6~hs,8~hs,9~hs">
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">Transmission</span>
+<span class="font-data-tabular text-headline-sm text-primary font-bold" rtrvr-ls="5~hs,6~hs,8~hs,9~hs,49~hs">0-Latency</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">DVI / Gigabit RJ45</span>
+</div>
+</div>
+</div>
+<!-- Right Hero Visual Rig (Column Span: 5) -->
+<div class="lg:col-span-5 relative" rtrvr-ls="5~hs,6~hs,8~hs,9~hs">
+<!-- Industrial Hardware Canvas Frame -->
+<div class="relative bg-surface-container-low rounded p-space-md shadow-xl overflow-hidden" rtrvr-ls="5~hs,6~hs,8~hs,9~hs,49~hs">
+<!-- Top Telemetry Status Header -->
+<div class="flex items-center justify-between pb-space-sm mb-space-sm bg-surface-container-lowest px-space-sm py-1.5 rounded" rtrvr-ls="5~hs,6~hs,8~hs,9~hs,49~hs">
+<div class="flex items-center gap-space-xs" rtrvr-ls="5~hs,6~hs,8~hs,9~hs">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-code-badge text-code-badge text-on-surface" rtrvr-ls="5~hs,6~hs,8~hs,9~hs">SYS_DIAGNOSTIC: ONLINE</span>
+</div>
+<span class="font-code-badge text-code-badge text-on-surface-variant">FPGA LOAD: 98.4% OK</span>
+</div>
+<!-- Main High-Contrast Product Montage -->
+<div class="relative w-full h-[360px] bg-surface-container-lowest rounded overflow-hidden flex items-center justify-center p-space-sm" rtrvr-ls="5~hs,6~hs,8~hs,9~hs,49~hs">
+<img class="w-full h-full object-cover rounded opacity-90 transition-transform duration-500 hover:scale-105" data-alt="Shenzhen ABCHIP high precision modular LED display cabinet enclosure paired with rackmount video processor hardware in an ultra-clean industrial dark studio, illuminated by crisp blue diagnostic LED indicators and circuit blueprint highlights, metallic chassis finish, professional engineering photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAba42fgYMsQw5amjZ82KkwGFHn-rO9Oo5wfyZhZuWFkD5uMa56P09pOJ0Ijkcsp3rCHHdPpnm0BU-Z-lN5yBe9e4gdNkVgqVJVOAhGzy-eAvWVmd20TJDJ_cNuTBSz5NBJtq3ff3-rpIeGEHZNHd8EHGem-LqioAm4Xl3yPIrI4XcRK_lXSD1FlTSS_RXGIAJ489XgSysCRWEfWKp1fT38BclUyet-9nUy_VGgPgm" rtrvr-ls="5~hs,6~hs,8~hs,9~hs,49~hs">
+<!-- Floating Live Telemetry Overlays -->
+<div class="absolute top-4 left-4 p-space-xs bg-surface-container-lowest/90 backdrop-blur-md rounded shadow-md" rtrvr-ls="5~hs,6~hs,8~hs,9~hs">
+<div class="flex items-center gap-space-xs" rtrvr-ls="5~hs,6~hs,8~hs,9~hs">
+<span class="font-code-badge text-code-badge text-primary font-bold">HD-VP1620</span>
+<span class="font-code-badge text-code-badge text-on-surface-variant px-1 bg-surface-container rounded" rtrvr-ls="5~hs,6~hs,8~hs,9~hs">16x RJ45</span>
+</div>
+<div class="font-data-tabular text-body-sm text-secondary" rtrvr-ls="5~hs,6~hs,8~hs,9~hs,49~hs" rtrvr-ro="42">Control: 10,400,000 Px Max</div>
+</div>
+<div class="absolute bottom-4 right-4 p-space-xs bg-surface-container-lowest/90 backdrop-blur-md rounded shadow-md text-right" rtrvr-ls="5~hs,6~hs,8~hs,9~hs">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase" rtrvr-ls="5~hs,6~hs,8~hs,9~hs">Dual-Mode Pipeline</span>
+<div class="font-code-badge text-code-badge text-primary font-bold" rtrvr-ls="5~hs,6~hs,8~hs,9~hs">SYNC / ASYNC CLOUD CLUSTER</div>
+<div class="font-data-tabular text-body-sm text-on-surface-variant" rtrvr-ls="5~hs,6~hs,8~hs,9~hs">HDMI • 4G • Wi-Fi • U-Disk</div>
+</div>
+</div>
+<!-- Controller Specification Strip Below Preview -->
+<div class="mt-space-sm grid grid-cols-3 gap-space-xs text-center font-code-badge text-code-badge" rtrvr-ls="5~hs,6~hs,8~hs,9~hs">
+<div class="p-space-xs bg-surface-container rounded" rtrvr-ls="5~hs,6~hs,8~hs,9~hs">
+<div class="text-on-surface-variant text-[10px]" rtrvr-ls="5~hs,6~hs,8~hs,9~hs">RECEIVING CARD</div>
+<div class="text-on-surface font-semibold" rtrvr-ls="5~hs,6~hs,8~hs,9~hs">HD-R512S PWM</div>
+</div>
+<div class="p-space-xs bg-surface-container rounded" rtrvr-ls="5~hs,6~hs,8~hs,9~hs">
+<div class="text-on-surface-variant text-[10px]" rtrvr-ls="5~hs,6~hs,8~hs,9~hs,49~hs">ASYNCHRONOUS</div>
+<div class="text-on-surface font-semibold" rtrvr-ls="5~hs,6~hs,8~hs,9~hs,49~hs">A6 / A5 / A4</div>
+</div>
+<div class="p-space-xs bg-surface-container rounded" rtrvr-ls="5~hs,6~hs,8~hs,9~hs">
+<div class="text-on-surface-variant text-[10px]" rtrvr-ls="5~hs,6~hs,8~hs,9~hs">CLOUD SUITE</div>
+<div class="text-secondary font-semibold" rtrvr-ls="5~hs,6~hs,8~hs,9~hs">LedArt v8.0</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==========================================
+       SECTION 2: Core Hardware Ecosystem (6 Bento Cards)
+       ========================================== -->
+<section class="w-full bg-surface-container-lowest py-space-xl" id="ecosystem" rtrvr-ls="5~hs,6~hs,8~hs,9~hs,49~hs">
+<div class="max-w-[1440px] mx-auto px-margin" rtrvr-ls="5~hs,6~hs,8~hs,9~hs,49~hs">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-lg" rtrvr-ls="5~hs,6~hs,8~hs,9~hs,49~hs">
+<div class="flex flex-col gap-space-xs" rtrvr-ls="5~hs,6~hs,8~hs,9~hs,49~hs">
+<div class="inline-flex items-center gap-space-xs" rtrvr-ls="5~hs,6~hs,8~hs,9~hs,49~hs">
+<span class="font-label-caps text-label-caps text-primary uppercase tracking-widest" rtrvr-ls="5~hs,6~hs,8~hs,9~hs">PRODUCT ARCHITECTURE CATALOG</span>
+<span class="w-12 h-0.5 bg-primary-container"></span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface" rtrvr-ls="5~hs,6~hs,8~hs,9~hs,49~hs">Complete LED Hardware Ecosystem</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl" rtrvr-ls="5~hs,6~hs,8~hs,9~hs,49~hs">
+            Derived directly from factory catalog engineering matrix tables. Standardized controllers, synchronous senders, receiving cards, and integrated video processing platforms.
+          </p>
+</div>
+<div class="flex items-center gap-space-xs" rtrvr-ls="5~hs,6~hs,8~hs,9~hs">
+<span class="font-code-badge text-code-badge px-space-sm py-1 bg-surface-container rounded text-on-surface-variant" rtrvr-ls="5~hs,6~hs,8~hs,9~hs">Total Catalog SKUs: 38</span>
+<span class="font-code-badge text-code-badge px-space-sm py-1 bg-surface-container rounded text-secondary" rtrvr-ls="5~hs,6~hs,8~hs,9~hs">Active Stock: Factory Ready</span>
+</div>
+</div>
+<!-- Bento Grid 6 Categories -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md" rtrvr-ls="49~hs">
+<!-- Card 1: LED Display Panels & Modular Cabinets -->
+<div class="flex flex-col bg-surface-container rounded p-space-md shadow-md hover:bg-surface-container-high transition-all group">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-code-badge text-code-badge text-primary bg-surface-container-lowest px-2 py-0.5 rounded font-bold">AB-CHIP PANELS</span>
+<span class="material-symbols-outlined text-secondary text-body-md">developer_board</span>
+</div>
+<div class="w-full h-44 bg-surface-container-lowest rounded overflow-hidden mb-space-sm relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="High precision AB-CHIP LED display modular panels showing both die-cast aluminum indoor cabinet frame and outdoor waterproof front assembly with deep true-black LEDs, macro industrial product photography, slate background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZxSBYilAVDXIMefKKitCD06D7_x6Ycps90tGtVoRN0FIp0rgTm2aUVnwaW274ffv8yjTp2OnmIyDJec1YaPEqlegWqCWN52gzcj-zr3_tEsOrPaZtdilqP0lvHVaGa3oMeBnzamgi5Ab0TqRoTg9iK-KV5kQBQgaWlmZ4nnEVSXUEqP-3azqGMClbAqhidOOgrm4d7wnDbAT9leSiLwFmattlVBqbzORg4EOEKN6U">
+<span class="absolute bottom-2 left-2 px-1.5 py-0.5 bg-surface-container-lowest/80 font-code-badge text-body-sm text-on-surface rounded">IP65 / High Refresh</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">LED Displays &amp; Die-Cast Cabinets</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex-1 mb-space-sm">
+            Precision engineered die-cast aluminum rental and fixed installation cabinets. Optimized for fine pixel pitches (P1.25 to P3.91) and outdoor architectural applications up to P10.
+          </p>
+<div class="flex flex-wrap gap-1 mb-space-sm">
+<span class="font-code-badge text-[11px] bg-surface-container-lowest text-on-surface-variant px-1.5 py-0.5 rounded">P1.25 - P10</span>
+<span class="font-code-badge text-[11px] bg-surface-container-lowest text-on-surface-variant px-1.5 py-0.5 rounded">3840Hz Refresh</span>
+<span class="font-code-badge text-[11px] bg-surface-container-lowest text-on-surface-variant px-1.5 py-0.5 rounded">Aluminum Alloy</span>
+</div>
+<a class="inline-flex items-center gap-space-xs font-title-md text-body-md text-primary hover:text-primary-fixed font-semibold pt-space-xs" href="#">
+<span>View Cabinet Configurations</span>
+<span class="material-symbols-outlined text-body-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Card 2: Video Processors -->
+<div class="flex flex-col bg-surface-container rounded p-space-md shadow-md hover:bg-surface-container-high transition-all group" rtrvr-ls="49~hs">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-code-badge text-code-badge text-primary bg-surface-container-lowest px-2 py-0.5 rounded font-bold" rtrvr-ls="49~hs">HD-VP SERIES</span>
+<span class="font-code-badge text-code-badge text-on-surface-variant">1.3M to 10.4M Pixels</span>
+</div>
+<div class="w-full h-44 bg-surface-container-lowest rounded overflow-hidden mb-space-sm relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Industrial 19-inch rack-mount 4K LED video processors HD-VP1620 and HD-VP820 with front OLED monitoring panels, physical rotary encoder knobs, multiple RJ45 output ports and HDMI inputs, studio lighting on matte black chassis." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcU2fcmjIq3RXF93XIEGFLpxjssThG0_3gSfWlqn06cTESOEc_T281VB2Pk9AcuidnhfKV4Ckcpqttsd_OwpiBCIAJr0mDkSjDo5blHJyFPQWTsKljKBV43L6LPEQIB2pYkeWEgpcdsmeeduV0TNfsTlQdUFevMB9Yl7n6M8t1Por8VPBRySCV1m53N6O-Y6wkOHC2RClN9Z-H2zs3Az7WvFVxzH8RIS4_s_0_sfeq" rtrvr-ls="49~hs">
+<span class="absolute bottom-2 left-2 px-1.5 py-0.5 bg-surface-container-lowest/80 font-code-badge text-body-sm text-secondary rounded">4K Input • Multi-Scene PIP</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1" rtrvr-ls="49~hs">Industrial Video Processors</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex-1 mb-space-sm" rtrvr-ls="49~hs">
+            HD-VP210 up to HD-VP1620 flagship. Hardware 60Hz real-time decoding, integrated synchronous sending card, dual-window PIP/POP layouts, and mobile APP control.
+          </p>
+<div class="flex flex-wrap gap-1 mb-space-sm">
+<span class="font-code-badge text-[11px] bg-surface-container-lowest text-on-surface-variant px-1.5 py-0.5 rounded">HDMI / DP / SDI / DVI</span>
+<span class="font-code-badge text-[11px] bg-surface-container-lowest text-on-surface-variant px-1.5 py-0.5 rounded">Up to 16x RJ45</span>
+<span class="font-code-badge text-[11px] bg-surface-container-lowest text-on-surface-variant px-1.5 py-0.5 rounded">Audio Out</span>
+</div>
+<a class="inline-flex items-center gap-space-xs font-title-md text-body-md text-primary hover:text-primary-fixed font-semibold pt-space-xs" href="#">
+<span rtrvr-ls="49~hs">Explore Processor Specs</span>
+<span class="material-symbols-outlined text-body-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Card 3: Synchronous Control Systems -->
+<div class="flex flex-col bg-surface-container rounded p-space-md shadow-md hover:bg-surface-container-high transition-all group">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-code-badge text-code-badge text-primary bg-surface-container-lowest px-2 py-0.5 rounded font-bold">SYNCHRONOUS T-SERIES</span>
+<span class="material-symbols-outlined text-primary text-body-md">sync</span>
+</div>
+<div class="w-full h-44 bg-surface-container-lowest rounded overflow-hidden mb-space-sm relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="T901, T901B, and T902x1 synchronous sending cards with gold-plated PCI connectors, DVI input ports, RJ45 dual ethernet outputs, red PCB substrate, crisp technical blueprint background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2RsJxepC1V2E-rpWSshIF7U_zyq6utNct9svzeImBFbTImKrRih2UspsC_Elj7vgXMog1OcQTij03R2aqT4aOmo6OC40_2dr_j_dmDP9cdXALSFfmXK9L_AqP9lCmsDqcRYTJA3wFBsvnhHpSzsJVdQpjc4S5LGNHKB2QCo_AGE6SDW-_g4E5X5UdhYJ8O2roA8cpa6of8cNa9snNM1BK7f01OPqXrMNem6u1EDk3">
+<span class="absolute bottom-2 left-2 px-1.5 py-0.5 bg-surface-container-lowest/80 font-code-badge text-body-sm text-on-surface rounded">T901 / T901B / T902x1</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">Synchronous Sending Systems</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex-1 mb-space-sm">
+            Engineered for live stage streaming, broadcast studios, and command room walls. Supports serial port cascading, unified parameter configuration, and multi-card hardware stitching.
+          </p>
+<div class="flex flex-wrap gap-1 mb-space-sm">
+<span class="font-code-badge text-[11px] bg-surface-container-lowest text-on-surface-variant px-1.5 py-0.5 rounded">1.3M - 2.6M Pixels</span>
+<span class="font-code-badge text-[11px] bg-surface-container-lowest text-on-surface-variant px-1.5 py-0.5 rounded">DVI Sync</span>
+<span class="font-code-badge text-[11px] bg-surface-container-lowest text-on-surface-variant px-1.5 py-0.5 rounded">USB-B Control</span>
+</div>
+<a class="inline-flex items-center gap-space-xs font-title-md text-body-md text-primary hover:text-primary-fixed font-semibold pt-space-xs" href="#">
+<span>Explore Synchronous Series</span>
+<span class="material-symbols-outlined text-body-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Card 4: Asynchronous Players & Cloud Controllers -->
+<div class="flex flex-col bg-surface-container rounded p-space-md shadow-md hover:bg-surface-container-high transition-all group">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-code-badge text-code-badge text-primary bg-surface-container-lowest px-2 py-0.5 rounded font-bold">ASYNC A / C / D SERIES</span>
+<span class="material-symbols-outlined text-secondary text-body-md">cloud_sync</span>
+</div>
+<div class="w-full h-44 bg-surface-container-lowest rounded overflow-hidden mb-space-sm relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Huidu ABCHIP A6, A5, C15, C35 asynchronous player boxes and green circuit controller boards with onboard 8GB flash memory, Wi-Fi antenna terminals, 4G module sockets and RJ45 ports." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuDrO4V7jVSMGChkGeGVwWFxBCGO0j0704RRXKQ2JGT_pQqlsRQJMhvpFNpeBDAvyLfeoFybgTheTF0tcMhscKxijGwiZJFQXCxHBROvAmzqSlemXtW9H9kIBuVcfJa62txMuHdXOAq-Gq48hLq9WvnwqAk8aG394-VYyPJ6-BUMBLq025FZ8z3frqykDn5pIn_63hWqaJ-46ND2trIqe6oqp4E43Uc_KD1EorXKeT">
+<span class="absolute bottom-2 left-2 px-1.5 py-0.5 bg-surface-container-lowest/80 font-code-badge text-body-sm text-on-surface rounded">Dual-Mode Sync/Async</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">Asynchronous Players &amp; Cloud Hubs</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex-1 mb-space-sm">
+            Dual-mode A6/A5/A4, cascade C15/C35, and lintel D05-D35 controllers. Standalone video playback with 8GB onboard storage, 4G/Wi-Fi wireless telemetry, and U-disk direct drive.
+          </p>
+<div class="flex flex-wrap gap-1 mb-space-sm">
+<span class="font-code-badge text-[11px] bg-surface-container-lowest text-on-surface-variant px-1.5 py-0.5 rounded">655K - 2.3M Px</span>
+<span class="font-code-badge text-[11px] bg-surface-container-lowest text-on-surface-variant px-1.5 py-0.5 rounded">8GB Onboard</span>
+<span class="font-code-badge text-[11px] bg-surface-container-lowest text-on-surface-variant px-1.5 py-0.5 rounded">LedArt Cloud</span>
+</div>
+<a class="inline-flex items-center gap-space-xs font-title-md text-body-md text-primary hover:text-primary-fixed font-semibold pt-space-xs" href="#">
+<span>View Asynchronous Lineup</span>
+<span class="material-symbols-outlined text-body-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Card 5: High-Refresh Receiving Cards -->
+<div class="flex flex-col bg-surface-container rounded p-space-md shadow-md hover:bg-surface-container-high transition-all group">
+<div class="flex items-center justify-between mb-space-sm" rtrvr-ls="49~hs">
+<span class="font-code-badge text-code-badge text-primary bg-surface-container-lowest px-2 py-0.5 rounded font-bold" rtrvr-ls="49~hs">HD-R50X RECEIVING CARDS</span>
+<span class="material-symbols-outlined text-primary text-body-md">memory</span>
+</div>
+<div class="w-full h-44 bg-surface-container-lowest rounded overflow-hidden mb-space-sm relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Detailed view of HD-R500, R508, R512, R612 and R5S receiving cards with dual 50PIN connectors, rows of gold-plated HUB75E headers, FPGA chip, and LED status lights, engineering workbench backdrop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPnWJpj3yqSlx-3DMZPAtKh2IsRf-VxSA9FoONre_5c_gpDHDJD-_GiClFZiaxbLZlcM-GFG_oUFLGfPcnJeSJbSfKfF16XjyymxOgPeGii8rSXyDn3hoHD6k9uSYOgtN717ziuTl4Nccbxu0kgX49Z4siHREXh0JHlkohJt00GkTwyHI3yrHFOPIHqw1_TNvy-lkC_gUgUw1XcrBneGI-E24HkALZLT4Ne81N9LOH" rtrvr-ls="49~hs">
+<span class="absolute bottom-2 left-2 px-1.5 py-0.5 bg-surface-container-lowest/80 font-code-badge text-body-sm text-secondary rounded" rtrvr-ls="49~hs">16-32 Groups RGB</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">High-Refresh Receiving Cards</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex-1 mb-space-sm" rtrvr-ls="49~hs">
+            Compatible with A/C/T/VP systems. Full support for conventional ICs, PWM high-refresh chips, static to 1/64 scan, smart module setting, and fine-pitch calibration storage.
+          </p>
+<div class="flex flex-wrap gap-1 mb-space-sm">
+<span class="font-code-badge text-[11px] bg-surface-container-lowest text-on-surface-variant px-1.5 py-0.5 rounded" rtrvr-ls="49~hs">HUB75E × 8-16</span>
+<span class="font-code-badge text-[11px] bg-surface-container-lowest text-on-surface-variant px-1.5 py-0.5 rounded">PWM Drive</span>
+<span class="font-code-badge text-[11px] bg-surface-container-lowest text-on-surface-variant px-1.5 py-0.5 rounded">1/64 Scan Mode</span>
+</div>
+<a class="inline-flex items-center gap-space-xs font-title-md text-body-md text-primary hover:text-primary-fixed font-semibold pt-space-xs" href="#" rtrvr-ls="49~hs" rtrvr-ro="50">
+<span rtrvr-ls="49~hs">Download Pinout Specs</span>
+<span class="material-symbols-outlined text-body-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Card 6: Smart Sensors & Industrial Accessories -->
+<div class="flex flex-col bg-surface-container rounded p-space-md shadow-md hover:bg-surface-container-high transition-all group">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-code-badge text-code-badge text-primary bg-surface-container-lowest px-2 py-0.5 rounded font-bold">ACCESSORIES &amp; TELEMETRY</span>
+<span class="material-symbols-outlined text-secondary text-body-md">sensors</span>
+</div>
+<div class="w-full h-44 bg-surface-container-lowest rounded overflow-hidden mb-space-sm relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Industrial sensor suite including anemometer wind speed cup transmitter, wind direction vane, optical brightness sensor probe S107, temperature probe, GPS module, and S208 sensor hub box on clean laboratory slate." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqcLwCVfQbND6SmpASatbIjT-BlmLt_31ByiiCQGkko4oGyNMVbFhsno8Z-2nd6zOBi30fWfQ7KvT826yiAo3HZIR3-HF0Fc8p9guGVzf8Em9nHV6W65x-FYhR4f6YJeUlChd_uWrQCErJ-kX5UKqv6UejsSCM0xXHxfHIuYaSf9Yw5jyGAuTBqC-g1wQ3pCyxY_zQQHK_H7OuIxd5I4MEKOL_MxK80dD5vGhJg4gc">
+<span class="absolute bottom-2 left-2 px-1.5 py-0.5 bg-surface-container-lowest/80 font-code-badge text-body-sm text-on-surface rounded">Auto-Dimming &amp; Weather</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">Smart Sensors &amp; Accessories</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex-1 mb-space-sm">
+            S107 automatic optical brightness sensors, wind speed &amp; direction transmitters, multi-functional louver boxes (PM2.5, noise, temp), 4G IoT modules, and power relay hubs.
+          </p>
+<div class="flex flex-wrap gap-1 mb-space-sm">
+<span class="font-code-badge text-[11px] bg-surface-container-lowest text-on-surface-variant px-1.5 py-0.5 rounded">S107 Optical</span>
+<span class="font-code-badge text-[11px] bg-surface-container-lowest text-on-surface-variant px-1.5 py-0.5 rounded">S208 Sensor Hub</span>
+<span class="font-code-badge text-[11px] bg-surface-container-lowest text-on-surface-variant px-1.5 py-0.5 rounded">K524 Power Relay</span>
+</div>
+<a class="inline-flex items-center gap-space-xs font-title-md text-body-md text-primary hover:text-primary-fixed font-semibold pt-space-xs" href="#">
+<span>View Sensor Catalogue</span>
+<span class="material-symbols-outlined text-body-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- ==========================================
+       SECTION 3: Industry Applications (4 Pillars)
+       ========================================== -->
+<section class="w-full bg-surface py-space-xl" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,12~hs,13~hs,15~hs,23~hs,24~hs,49~hs">
+<div class="max-w-[1440px] mx-auto px-margin" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,12~hs,13~hs,15~hs,23~hs,24~hs,49~hs">
+<!-- Header -->
+<div class="flex flex-col gap-space-xs mb-space-lg text-center max-w-3xl mx-auto" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,12~hs,13~hs,15~hs,23~hs,24~hs">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest" rtrvr-ls="5~hs,6~hs,8~hs,9~hs,49~hs">DEPLOYMENT SCENARIOS</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,12~hs,13~hs,15~hs,23~hs,24~hs,49~hs" rtrvr-ro="42">Commercial Environments</h2>
+<p class="font-body-md text-body-md text-on-surface-variant" rtrvr-ls="5~hs,6~hs,8~hs,9~hs,49~hs">
+          From live touring concerts demanding zero audio-visual desynchronization to solar-exposed highway billboards operating 24/7/365 under severe weather monitoring.
+        </p>
+</div>
+<!-- 4 Application Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md" rtrvr-ls="5~hs,6~hs,8~hs,9~hs">
+<!-- App 1: Stage & Live Events -->
+<div class="flex flex-col bg-surface-container-low rounded overflow-hidden shadow-md">
+<div class="h-48 w-full relative">
+<img class="w-full h-full object-cover" data-alt="Concert arena concert stage with immense high-resolution LED curved screen showing live music video graphics, illuminated stage rigging, audience silhouette, vibrant vivid lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2d56bHgQhHK0Auc48qiMSzIfdYwP2Rzf4YUlUJMUcM_FuJGocLeOCFesm8AJGhwOKW2HreT8xpN1K5PpB_Ba1LmdGeABQSW59Ix_Srle8WYxyb_4r_DAA9FSQN87tC_nVLzfETXeV_RV4Ed3n9sXOMDspcEbrUGK2aMZkNHUAGChi87KygvljLtJa-rLpB21Bg_-ODe9JMbRfjAqJw3aGtGUT7sDMoPsuNG0C53k9">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low to-transparent" rtrvr-ls="49~hs"></div>
+<span class="absolute top-3 left-3 px-2 py-0.5 bg-surface-container-lowest/90 font-code-badge text-body-sm text-primary rounded">LIVE STAGE</span>
+</div>
+<div class="p-space-md flex flex-col flex-1 gap-space-xs" rtrvr-ls="49~hs">
+<h4 class="font-title-md text-title-md text-on-surface" rtrvr-ls="49~hs">Stage &amp; Live Broadcast</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex-1" rtrvr-ls="49~hs">
+              Zero-latency DVI synchronous pipelines using T901/T902x1 controllers combined with HD-R512S receiving cards delivering 3840Hz refresh for moiré-free broadcast filming.
+            </p>
+<div class="pt-space-xs font-code-badge text-body-sm text-primary flex items-center gap-1">
+<span>Spec: T901 + R512S</span>
+</div>
+</div>
+</div>
+<!-- App 2: Outdoor Billboard Clusters -->
+<div class="flex flex-col bg-surface-container-low rounded overflow-hidden shadow-md" rtrvr-ls="5~hs,6~hs,8~hs,9~hs">
+<div class="h-48 w-full relative" rtrvr-ls="5~hs,6~hs,8~hs,9~hs">
+<img class="w-full h-full object-cover" data-alt="Metropolitan roadside commercial giant LED billboard screen under evening sunset sky, sharp advertising graphics, waterproof aluminum housing, traffic lights." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpjFMGVnU_k361UtV-pncK9QrF_zVoTdKbI8rG1PbX3bKILSMqyl9fOK-DCe5DBn_3l-v8xM1gMa79LToYFgg-W80ZJzT4qC2HRzNrlnKegzn-2ao_NXaLGzFmG0ercQOJS8GhcmLwGzcelfKBaHS8q3hxaCKZy27jmT6dyXvhEHNe7fUZb07uokFeI--4aK6GxdVsy0Bbttq6bflms7lglO57lT2HNwPKnnyYwqnW">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low to-transparent" rtrvr-ls="5~hs,6~hs,8~hs,9~hs,49~hs"></div>
+<span class="absolute top-3 left-3 px-2 py-0.5 bg-surface-container-lowest/90 font-code-badge text-body-sm text-secondary rounded">COMMERCIAL DOOH</span>
+</div>
+<div class="p-space-md flex flex-col flex-1 gap-space-xs">
+<h4 class="font-title-md text-title-md text-on-surface">Highway &amp; Billboard DOOH</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex-1">
+              Asynchronous cloud scheduling via 4G/Wi-Fi with A-Series players. Direct integration with S107 light sensors for automated solar daylight dimming and K524 relay shutdown.
+            </p>
+<div class="pt-space-xs font-code-badge text-body-sm text-secondary flex items-center gap-1">
+<span>Spec: A5/A6 + S107 Sensor</span>
+</div>
+</div>
+</div>
+<!-- App 3: Command & Control Rooms -->
+<div class="flex flex-col bg-surface-container-low rounded overflow-hidden shadow-md">
+<div class="h-48 w-full relative">
+<img class="w-full h-full object-cover" data-alt="Futuristic security operations and transport command center with curved fine-pitch LED video wall displaying live GIS mapping data and CCTV camera matrices, blue accent lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlIZOX0tgvH8RJlhDnZjyy0lWCs3pMPdcIxDtDwUA20Dga0TPcPo5sPMq73KVuJ67l71G_ia1-K1BYTRWPncNGfb9BGy71pVnd-WmTKhGU8ps9C3gFyO8LA7sGt58em8VmJuITeO9qCQSzisELnd_S20ew9IcAGLRR1fPn22jizcFrRglAZyfRgdhD9LeEwsq2QEFQqnWZH_cguvW_5jjC9edcO2SkoD1VLCXicJ8M">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low to-transparent" rtrvr-ls="49~hs"></div>
+<span class="absolute top-3 left-3 px-2 py-0.5 bg-surface-container-lowest/90 font-code-badge text-body-sm text-primary rounded">COMMAND &amp; NOC</span>
+</div>
+<div class="p-space-md flex flex-col flex-1 gap-space-xs">
+<h4 class="font-title-md text-title-md text-on-surface">Command &amp; Control Rooms</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex-1">
+              Sub-1mm fine pixel pitch modules driven by HD-VP820 &amp; HD-VP1620 processors supporting 4K multi-window picture-in-picture, seamless preset recalling, and low grayscale detail.
+            </p>
+<div class="pt-space-xs font-code-badge text-body-sm text-primary flex items-center gap-1">
+<span>Spec: HD-VP1620 + R612</span>
+</div>
+</div>
+</div>
+<!-- App 4: Retail & Door Lintel Displays -->
+<div class="flex flex-col bg-surface-container-low rounded overflow-hidden shadow-md">
+<div class="h-48 w-full relative">
+<img class="w-full h-full object-cover" data-alt="Modern commercial storefront entrance with vibrant high-contrast single and dual color LED door lintel scrolling text ticker screen, warm urban retail setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFcasYtmyKtY2YlKll9BYOybbV3auGqkAbN7aBQ-cMSGdOE9_t40Q2IfyxHVBXGyISr-o-I64ejBt8fysMuedAdbJqIb4XB6-pk8iir1lzfErR2pGWuVpwEmUU3RgJalSUcPhdCG2H16MGHqIzcUdlRpTd-ThMSHCFtWv0Pr0mcnk2keLFvCXlUq_lE4jk4CeNt1rrEdSsTG04Xgg73MCi9ECDR8Re6Z3MR3qT2WvL">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low to-transparent" rtrvr-ls="49~hs"></div>
+<span class="absolute top-3 left-3 px-2 py-0.5 bg-surface-container-lowest/90 font-code-badge text-body-sm text-on-surface rounded">DOOR LINTEL</span>
+</div>
+<div class="p-space-md flex flex-col flex-1 gap-space-xs">
+<h4 class="font-title-md text-title-md text-on-surface">Storefront &amp; Lintel Tickers</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex-1">
+              Cost-effective W-Series Wi-Fi and U-Disk cards (W60, W62, U6A, D05) allowing instant mobile LedArt updates for scrolling text, border animations, and environmental temperature stats.
+            </p>
+<div class="pt-space-xs font-code-badge text-body-sm text-on-surface flex items-center gap-1">
+<span>Spec: W62-75 + HUB75</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==========================================
+       SECTION 4: Interactive Hardware Selection Matrix & Spec Sheet
+       ========================================== -->
+<section class="w-full bg-surface-container-lowest py-space-xl" id="selection-table" rtrvr-ls="5~hs,6~hs,8~hs,9~hs,49~hs">
+<div class="max-w-[1440px] mx-auto px-margin">
+<div class="p-space-lg bg-surface-container rounded shadow-xl" rtrvr-ls="49~hs">
+<!-- Header Strip -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md pb-space-lg">
+<div>
+<div class="flex items-center gap-space-xs mb-1" rtrvr-ls="49~hs">
+<span class="font-code-badge text-code-badge text-secondary font-bold">SPECIFICATION MATRIX</span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase" rtrvr-ls="49~hs">OFFICIAL CATALOGUE EXTRACT</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface" rtrvr-ls="49~hs">Interactive Product Selection Matrix</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+              Select pixel bounds, topology, and interface types to match factory controllers for your LED installation.
+            </p>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs">
+<button class="matrix-filter-btn px-space-md py-space-xs bg-primary-container text-on-primary-container font-title-md text-body-md rounded font-semibold transition-all" id="tab-vp" type="button" rtrvr-ls="0~1" rtrvr-ro="38">Video Processors</button>
+<button class="matrix-filter-btn px-space-md py-space-xs bg-surface-container-high text-on-surface font-title-md text-body-md rounded font-semibold hover:bg-surface-bright transition-all" id="tab-async" type="button" rtrvr-ls="0~1" rtrvr-ro="38">Async Players (A/C/D)</button>
+<button class="matrix-filter-btn px-space-md py-space-xs bg-surface-container-high text-on-surface font-title-md text-body-md rounded font-semibold hover:bg-surface-bright transition-all" id="tab-sync" type="button" rtrvr-ls="0~1" rtrvr-ro="38">Synchronous (T-Series)</button>
+<button class="matrix-filter-btn px-space-md py-space-xs bg-surface-container-high text-on-surface font-title-md text-body-md rounded font-semibold hover:bg-surface-bright transition-all" id="tab-recv" type="button" rtrvr-ls="0~1" rtrvr-ro="38">Receiving Cards (R50X)</button>
+</div>
+</div>
+<!-- Filterable Spec Table -->
+<div class="overflow-x-auto w-full mt-space-md">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead>
+<tr class="bg-surface-container-lowest text-on-surface font-label-caps text-label-caps uppercase tracking-wider">
+<th class="py-space-sm px-space-md">Model ID</th>
+<th class="py-space-sm px-space-md">Control Range (Pixels)</th>
+<th class="py-space-sm px-space-md">Hardware Dec / Features</th>
+<th class="py-space-sm px-space-md">Interface Architecture</th>
+<th class="py-space-sm px-space-md">Network / Protocol</th>
+<th class="py-space-sm px-space-md text-right">Spec Sheet</th>
+</tr>
+</thead>
+<tbody class="font-data-tabular" id="matrix-table-body">
+<!-- Video Processors Rows -->
+<tr class="table-row-item vp-row bg-surface-container-low hover:bg-surface-container-high transition-colors">
+<td class="py-space-sm px-space-md font-code-badge text-code-badge text-primary font-bold">HD-VP1620</td>
+<td class="py-space-sm px-space-md text-on-surface font-semibold">10.4M px <span class="text-on-surface-variant font-normal">(W: 16000, H: 3840)</span></td>
+<td class="py-space-sm px-space-md text-on-surface-variant">4K Signal Input, Dual-Window PIP/POP, One-button Freeze, Wi-Fi APP</td>
+<td class="py-space-sm px-space-md text-on-surface">In: HDMI×1, DP×1, DVI×1, VGA×1, SDI×1 | Out: RJ45×16</td>
+<td class="py-space-sm px-space-md text-secondary">Gigabit LAN / Wi-Fi / RS232</td>
+<td class="py-space-sm px-space-md text-right"><span class="material-symbols-outlined text-primary hover:text-on-surface cursor-pointer text-body-md" title="Download Spec PDF">picture_as_pdf</span></td>
+</tr>
+<tr class="table-row-item vp-row bg-surface-container hover:bg-surface-container-high transition-colors">
+<td class="py-space-sm px-space-md font-code-badge text-code-badge text-primary font-bold">HD-VP1220</td>
+<td class="py-space-sm px-space-md text-on-surface font-semibold">7.8M px <span class="text-on-surface-variant font-normal">(W: 16000, H: 3840)</span></td>
+<td class="py-space-sm px-space-md text-on-surface-variant">Integrated Sync Sender, Multi-Scene Presets, Hard Decode 60Hz</td>
+<td class="py-space-sm px-space-md text-on-surface">In: HDMI×1, DP×1, DVI×1, VGA×1, SDI×1 | Out: RJ45×12</td>
+<td class="py-space-sm px-space-md text-secondary">Gigabit LAN / Wi-Fi</td>
+<td class="py-space-sm px-space-md text-right"><span class="material-symbols-outlined text-primary hover:text-on-surface cursor-pointer text-body-md" title="Download Spec PDF">picture_as_pdf</span></td>
+</tr>
+<tr class="table-row-item vp-row bg-surface-container-low hover:bg-surface-container-high transition-colors">
+<td class="py-space-sm px-space-md font-code-badge text-code-badge text-primary font-bold">HD-VP820</td>
+<td class="py-space-sm px-space-md text-on-surface font-semibold">5.2M px <span class="text-on-surface-variant font-normal">(W: 8000, H: 3840)</span></td>
+<td class="py-space-sm px-space-md text-on-surface-variant">4K Input, Audio In/Out, Fade in/out transition, LedArt Mobile Suite</td>
+<td class="py-space-sm px-space-md text-on-surface">In: HDMI×1, DP×1, DVI×1, VGA×1, SDI×1 | Out: RJ45×8</td>
+<td class="py-space-sm px-space-md text-secondary">Gigabit LAN / Wi-Fi</td>
+<td class="py-space-sm px-space-md text-right"><span class="material-symbols-outlined text-primary hover:text-on-surface cursor-pointer text-body-md" title="Download Spec PDF">picture_as_pdf</span></td>
+</tr>
+<tr class="table-row-item vp-row bg-surface-container hover:bg-surface-container-high transition-colors">
+<td class="py-space-sm px-space-md font-code-badge text-code-badge text-primary font-bold">HD-VP620</td>
+<td class="py-space-sm px-space-md text-on-surface font-semibold">3.9M px <span class="text-on-surface-variant font-normal">(W: 8000, H: 3840)</span></td>
+<td class="py-space-sm px-space-md text-on-surface-variant">Seamless Switching, U-Disk video direct loop, Audio Sync In/Out</td>
+<td class="py-space-sm px-space-md text-on-surface">In: HDMI×1, DP×1, DVI×1, VGA×1, SDI×1 | Out: RJ45×6</td>
+<td class="py-space-sm px-space-md text-secondary">Gigabit LAN / Wi-Fi</td>
+<td class="py-space-sm px-space-md text-right"><span class="material-symbols-outlined text-primary hover:text-on-surface cursor-pointer text-body-md" title="Download Spec PDF">picture_as_pdf</span></td>
+</tr>
+<tr class="table-row-item vp-row bg-surface-container-low hover:bg-surface-container-high transition-colors">
+<td class="py-space-sm px-space-md font-code-badge text-code-badge text-primary font-bold">HD-VP410</td>
+<td class="py-space-sm px-space-md text-on-surface font-semibold">2.6M px <span class="text-on-surface-variant font-normal">(W: 3840, H: 1920)</span></td>
+<td class="py-space-sm px-space-md text-on-surface-variant">Integrated sender, direct U-disk video play, Audio In/Out</td>
+<td class="py-space-sm px-space-md text-on-surface">In: USB×1, CVBS×1, HDMI×1, DVI×1, VGA×1 | Out: RJ45×4</td>
+<td class="py-space-sm px-space-md text-secondary">Gigabit LAN / U-Disk</td>
+<td class="py-space-sm px-space-md text-right"><span class="material-symbols-outlined text-primary hover:text-on-surface cursor-pointer text-body-md" title="Download Spec PDF">picture_as_pdf</span></td>
+</tr>
+<tr class="table-row-item vp-row bg-surface-container hover:bg-surface-container-high transition-colors">
+<td class="py-space-sm px-space-md font-code-badge text-code-badge text-primary font-bold">HD-VP210</td>
+<td class="py-space-sm px-space-md text-on-surface font-semibold">1.3M px <span class="text-on-surface-variant font-normal">(W: 3840, H: 1920)</span></td>
+<td class="py-space-sm px-space-md text-on-surface-variant">Entry industrial video wall processor, 2-line gigabit output</td>
+<td class="py-space-sm px-space-md text-on-surface">In: USB×1, CVBS×1, HDMI×1, DVI×1, VGA×1 | Out: RJ45×2</td>
+<td class="py-space-sm px-space-md text-secondary">Gigabit LAN / U-Disk</td>
+<td class="py-space-sm px-space-md text-right"><span class="material-symbols-outlined text-primary hover:text-on-surface cursor-pointer text-body-md" title="Download Spec PDF">picture_as_pdf</span></td>
+</tr>
+<!-- Asynchronous Rows -->
+<tr class="table-row-item async-row hidden bg-surface-container-low hover:bg-surface-container-high transition-colors">
+<td class="py-space-sm px-space-md font-code-badge text-code-badge text-secondary font-bold">A6 (Dual-Mode)</td>
+<td class="py-space-sm px-space-md text-on-surface font-semibold">2.3M px <span class="text-on-surface-variant font-normal">(W: 3840, H: 4096)</span></td>
+<td class="py-space-sm px-space-md text-on-surface-variant">Sync/Async auto-switching, HDMI video zoom, 8GB storage + U-disk</td>
+<td class="py-space-sm px-space-md text-on-surface">In: HDMI×1, RJ45×1, USB×1 | Out: RJ45×4, Audio×1, HDMI×1</td>
+<td class="py-space-sm px-space-md text-primary">LAN / Wi-Fi / 4G (Opt) / HDMI Sync</td>
+<td class="py-space-sm px-space-md text-right"><span class="material-symbols-outlined text-primary hover:text-on-surface cursor-pointer text-body-md" title="Download Spec PDF">picture_as_pdf</span></td>
+</tr>
+<tr class="table-row-item async-row hidden bg-surface-container hover:bg-surface-container-high transition-colors">
+<td class="py-space-sm px-space-md font-code-badge text-code-badge text-secondary font-bold">A5 (Dual-Mode)</td>
+<td class="py-space-sm px-space-md text-on-surface font-semibold">1.3M px <span class="text-on-surface-variant font-normal">(W: 3840, H: 2048)</span></td>
+<td class="py-space-sm px-space-md text-on-surface-variant">Sync/Async auto switch, Standard Wi-Fi module, Mobile APP control</td>
+<td class="py-space-sm px-space-md text-on-surface">In: HDMI×1, RJ45×1, USB×1 | Out: RJ45×2, Audio×1</td>
+<td class="py-space-sm px-space-md text-primary">LAN / Wi-Fi / 4G / HDMI Sync</td>
+<td class="py-space-sm px-space-md text-right"><span class="material-symbols-outlined text-primary hover:text-on-surface cursor-pointer text-body-md" title="Download Spec PDF">picture_as_pdf</span></td>
+</tr>
+<tr class="table-row-item async-row hidden bg-surface-container-low hover:bg-surface-container-high transition-colors">
+<td class="py-space-sm px-space-md font-code-badge text-code-badge text-secondary font-bold">C35 / C35C</td>
+<td class="py-space-sm px-space-md text-on-surface font-semibold">524K px <span class="text-on-surface-variant font-normal">(W: 1024, H: 1024)</span></td>
+<td class="py-space-sm px-space-md text-on-surface-variant">HD hardware decoding, 60Hz frame output, 4GB flash, can act as receiving</td>
+<td class="py-space-sm px-space-md text-on-surface">In: RJ45×1, USB×1 | Out: RJ45×1, Audio×1, HUB75E×10</td>
+<td class="py-space-sm px-space-md text-primary">Network Port / U-disk / Wi-Fi / 4G</td>
+<td class="py-space-sm px-space-md text-right"><span class="material-symbols-outlined text-primary hover:text-on-surface cursor-pointer text-body-md" title="Download Spec PDF">picture_as_pdf</span></td>
+</tr>
+<tr class="table-row-item async-row hidden bg-surface-container hover:bg-surface-container-high transition-colors">
+<td class="py-space-sm px-space-md font-code-badge text-code-badge text-secondary font-bold">D35 Lintel</td>
+<td class="py-space-sm px-space-md text-on-surface font-semibold">65.5K px <span class="text-on-surface-variant font-normal">(W: 1024, H: 128)</span></td>
+<td class="py-space-sm px-space-md text-on-surface-variant">Door lintel &amp; small banner screens, 4GB flash, Wi-Fi optional wireless</td>
+<td class="py-space-sm px-space-md text-on-surface">In: RJ45×1, USB×1 | Out: 50PIN HUB×1</td>
+<td class="py-space-sm px-space-md text-primary">LAN / Wi-Fi / 4G</td>
+<td class="py-space-sm px-space-md text-right"><span class="material-symbols-outlined text-primary hover:text-on-surface cursor-pointer text-body-md" title="Download Spec PDF">picture_as_pdf</span></td>
+</tr>
+<!-- Synchronous Rows -->
+<tr class="table-row-item sync-row hidden bg-surface-container-low hover:bg-surface-container-high transition-colors">
+<td class="py-space-sm px-space-md font-code-badge text-code-badge text-primary font-bold">T902x1</td>
+<td class="py-space-sm px-space-md text-on-surface font-semibold">2.6M px <span class="text-on-surface-variant font-normal">(W: 3840, H: 2048)</span></td>
+<td class="py-space-sm px-space-md text-on-surface-variant">Multi-card stitching, unified software debugging, stage broadcast rigor</td>
+<td class="py-space-sm px-space-md text-on-surface">In: DVI×1, USB-B×1, Audio×1, AC 110-220V | Out: RJ45×4</td>
+<td class="py-space-sm px-space-md text-on-surface-variant">DVI Synchronous Live Feed</td>
+<td class="py-space-sm px-space-md text-right"><span class="material-symbols-outlined text-primary hover:text-on-surface cursor-pointer text-body-md" title="Download Spec PDF">picture_as_pdf</span></td>
+</tr>
+<tr class="table-row-item sync-row hidden bg-surface-container hover:bg-surface-container-high transition-colors">
+<td class="py-space-sm px-space-md font-code-badge text-code-badge text-primary font-bold">T901 / T901B</td>
+<td class="py-space-sm px-space-md text-on-surface font-semibold">1.3M px <span class="text-on-surface-variant font-normal">(W: 3840, H: 2048)</span></td>
+<td class="py-space-sm px-space-md text-on-surface-variant">Serial port cascading, unified configuration, ultra low latency</td>
+<td class="py-space-sm px-space-md text-on-surface">In: DVI×1, USB-B×1, Audio×1 | Out: RJ45×2</td>
+<td class="py-space-sm px-space-md text-on-surface-variant">DVI Synchronous Live Feed</td>
+<td class="py-space-sm px-space-md text-right"><span class="material-symbols-outlined text-primary hover:text-on-surface cursor-pointer text-body-md" title="Download Spec PDF">picture_as_pdf</span></td>
+</tr>
+<!-- Receiving Card Rows -->
+<tr class="table-row-item recv-row hidden bg-surface-container-low hover:bg-surface-container-high transition-colors">
+<td class="py-space-sm px-space-md font-code-badge text-code-badge text-secondary font-bold">HD-R512S / R512T</td>
+<td class="py-space-sm px-space-md text-on-surface font-semibold">256×256 px <span class="text-on-surface-variant font-normal">(Outdoors: 256)</span></td>
+<td class="py-space-sm px-space-md text-on-surface-variant">Supports PWM chips, 1/64 scan, compatible long/short flat ribbon cables</td>
+<td class="py-space-sm px-space-md text-on-surface">12 sets HUB75E onboard (Data: 24 groups RGB)</td>
+<td class="py-space-sm px-space-md text-primary">Dual RJ45 Loop-Through</td>
+<td class="py-space-sm px-space-md text-right"><span class="material-symbols-outlined text-primary hover:text-on-surface cursor-pointer text-body-md" title="Download Spec PDF">picture_as_pdf</span></td>
+</tr>
+<tr class="table-row-item recv-row hidden bg-surface-container hover:bg-surface-container-high transition-colors">
+<td class="py-space-sm px-space-md font-code-badge text-code-badge text-secondary font-bold">HD-R516</td>
+<td class="py-space-sm px-space-md text-on-surface font-semibold">256×512 px <span class="text-on-surface-variant font-normal">(High Density)</span></td>
+<td class="py-space-sm px-space-md text-on-surface-variant">High refresh rate, support eight open outputs, smart module setting</td>
+<td class="py-space-sm px-space-md text-on-surface">16 sets HUB75E onboard (Data: 32 groups RGB)</td>
+<td class="py-space-sm px-space-md text-primary">Dual RJ45 Gigabit Ethernet</td>
+<td class="py-space-sm px-space-md text-right"><span class="material-symbols-outlined text-primary hover:text-on-surface cursor-pointer text-body-md" title="Download Spec PDF">picture_as_pdf</span></td>
+</tr>
+<tr class="table-row-item recv-row hidden bg-surface-container-low hover:bg-surface-container-high transition-colors">
+<td class="py-space-sm px-space-md font-code-badge text-code-badge text-secondary font-bold">HD-R5S (Fine-Pitch)</td>
+<td class="py-space-sm px-space-md text-on-surface font-semibold">256×512 px <span class="text-on-surface-variant font-normal">(Fine Pixel)</span></td>
+<td class="py-space-sm px-space-md text-on-surface-variant">Dedicated to transparent and fine-pitch screens, non-standard port modules</td>
+<td class="py-space-sm px-space-md text-on-surface">2 sets 120PIN port (Supports 32 parallel / 64 serial)</td>
+<td class="py-space-sm px-space-md text-primary">Dual RJ45 Ethernet</td>
+<td class="py-space-sm px-space-md text-right"><span class="material-symbols-outlined text-primary hover:text-on-surface cursor-pointer text-body-md" title="Download Spec PDF">picture_as_pdf</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Interactive Sizing Diagnostic Box -->
+<div class="mt-space-lg p-space-md bg-surface-container-lowest rounded flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded bg-primary-container/20 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-headline-sm">architecture</span>
+</div>
+<div>
+<div class="font-title-md text-title-md text-on-surface font-semibold" rtrvr-ls="49~hs">Custom Screen Resolution Sizing Assistance?</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Directly communicate with AB CHIP Shenzhen field application engineers to verify FPGA load capacities and RCFG receiving card configurations.
+              </p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs shrink-0">
+<a class="px-space-md py-space-xs bg-surface-container-high hover:bg-surface-bright text-on-surface rounded font-code-badge text-code-badge transition-all" href="mailto:support@abchipled.com">
+              support@abchipled.com
+            </a>
+<a class="px-space-md py-space-xs bg-primary-container text-on-primary-container rounded font-title-md text-body-md font-semibold transition-all" href="#">
+              Request Hardware Sizing
+            </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==========================================
+       SECTION 5: Credibility & Testing Standards Strip
+       ========================================== -->
+<section class="w-full bg-surface py-space-lg" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,12~hs,13~hs,15~hs,23~hs,24~hs,49~hs">
+<div class="max-w-[1440px] mx-auto px-margin" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,12~hs,13~hs,15~hs,23~hs,24~hs">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-md" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,12~hs,13~hs,15~hs,23~hs,24~hs">
+<div class="flex items-center gap-space-sm p-space-sm bg-surface-container-low rounded" rtrvr-ls="5~hs,6~hs,8~hs,9~hs,49~hs">
+<span class="material-symbols-outlined text-primary text-headline-md">verified</span>
+<div class="flex flex-col" rtrvr-ls="5~hs,6~hs,8~hs,9~hs">
+<span class="font-title-md text-body-md text-on-surface font-semibold" rtrvr-ls="5~hs,6~hs,8~hs,9~hs" rtrvr-ro="42">48-Hr Thermal Burn-in</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant" rtrvr-ls="5~hs,6~hs,8~hs,9~hs" rtrvr-ro="42">100% factory full-load test</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm p-space-sm bg-surface-container-low rounded" rtrvr-ls="5~hs,6~hs,8~hs,9~hs">
+<span class="material-symbols-outlined text-secondary text-headline-md" rtrvr-ls="5~hs,6~hs,8~hs,9~hs" rtrvr-ro="42">precision_manufacturing</span>
+<div class="flex flex-col" rtrvr-ls="5~hs,6~hs,8~hs,9~hs">
+<span class="font-title-md text-body-md text-on-surface font-semibold" rtrvr-ls="5~hs,6~hs,8~hs,9~hs" rtrvr-ro="42">SMT High-Speed Lines</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant" rtrvr-ls="5~hs,6~hs,8~hs,9~hs" rtrvr-ro="42">Shenzhen Baoan facility</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm p-space-sm bg-surface-container-low rounded" rtrvr-ls="5~hs,6~hs,8~hs,9~hs">
+<span class="material-symbols-outlined text-primary text-headline-md">security</span>
+<div class="flex flex-col" rtrvr-ls="5~hs,6~hs,8~hs,9~hs">
+<span class="font-title-md text-body-md text-on-surface font-semibold" rtrvr-ls="5~hs,6~hs,8~hs,9~hs" rtrvr-ro="42">CE, FCC, RoHS Class A</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant" rtrvr-ls="5~hs,6~hs,8~hs,9~hs" rtrvr-ro="42">EMC electromagnetic certified</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm p-space-sm bg-surface-container-low rounded" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,12~hs,13~hs,15~hs,23~hs,24~hs">
+<span class="material-symbols-outlined text-secondary text-headline-md" rtrvr-ls="5~hs,6~hs,8~hs,9~hs" rtrvr-ro="42">system_update</span>
+<div class="flex flex-col" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,12~hs,13~hs,15~hs,23~hs,24~hs">
+<span class="font-title-md text-body-md text-on-surface font-semibold" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,12~hs,13~hs,15~hs,23~hs,24~hs" rtrvr-ro="42">24/7 Customer Support</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant" rtrvr-ls="5~hs,6~hs,8~hs,9~hs" rtrvr-ro="42">Universal driver updates</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Simple interactive filter for the Specification Matrix Table
+  document.addEventListener('DOMContentLoaded', function() {
+    const tabVp = document.getElementById('tab-vp');
+    const tabAsync = document.getElementById('tab-async');
+    const tabSync = document.getElementById('tab-sync');
+    const tabRecv = document.getElementById('tab-recv');
+
+    const vpRows = document.querySelectorAll('.vp-row');
+    const asyncRows = document.querySelectorAll('.async-row');
+    const syncRows = document.querySelectorAll('.sync-row');
+    const recvRows = document.querySelectorAll('.recv-row');
+
+    const allButtons = [tabVp, tabAsync, tabSync, tabRecv];
+
+    function activateTab(activeBtn, showRows) {
+      allButtons.forEach(btn => {
+        btn.classList.remove('bg-primary-container', 'text-on-primary-container');
+        btn.classList.add('bg-surface-container-high', 'text-on-surface');
+      });
+      activeBtn.classList.remove('bg-surface-container-high', 'text-on-surface');
+      activeBtn.classList.add('bg-primary-container', 'text-on-primary-container');
+
+      [vpRows, asyncRows, syncRows, recvRows].forEach(rowGroup => {
+        rowGroup.forEach(row => row.classList.add('hidden'));
+      });
+      showRows.forEach(row => row.classList.remove('hidden'));
+    }
+
+    if(tabVp && tabAsync && tabSync && tabRecv) {
+      tabVp.addEventListener('click', () => activateTab(tabVp, vpRows));
+      tabAsync.addEventListener('click', () => activateTab(tabAsync, asyncRows));
+      tabSync.addEventListener('click', () => activateTab(tabSync, syncRows));
+      tabRecv.addEventListener('click', () => activateTab(tabRecv, recvRows));
+    }
+  });
+</script></main><footer class="w-full bg-surface-container-lowest border-t border-outline-variant/40 mt-space-xl" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,12~hs,13~hs,15~hs,23~hs,24~hs"><div class="max-w-[1440px] mx-auto px-margin pt-space-xl pb-space-lg" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,12~hs,13~hs,15~hs,23~hs,24~hs,49~hs"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-lg mb-space-xl" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,12~hs,13~hs,15~hs,23~hs,24~hs,49~hs"><div class="lg:col-span-2 flex flex-col gap-space-md pr-space-md" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,12~hs,13~hs,15~hs,23~hs,24~hs,49~hs"><div class="flex items-center gap-space-md" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,12~hs,13~hs,15~hs,23~hs,24~hs,49~hs"><div class="flex flex-col" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,12~hs,13~hs,15~hs,23~hs,24~hs"><span class="font-headline-sm text-headline-sm uppercase tracking-wider text-primary font-bold" rtrvr-ls="5~hs,6~hs,8~hs,9~hs,49~hs" rtrvr-ro="42">AB CHIP</span><span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,12~hs,13~hs,15~hs,23~hs,24~hs,49~hs" rtrvr-ro="42">Huidu Technology Co. Ltd.</span></div></div><p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed" rtrvr-ls="5~hs,6~hs,8~hs,9~hs,49~hs" rtrvr-ro="42">Industrial-grade optoelectronic hardware, specialized control topologies, synchronous/asynchronous sending architectures, and ultra-low latency LED video processing solutions for system integrators worldwide.</p><div class="flex flex-col gap-space-xs mt-space-xs" rtrvr-ls="5~hs,6~hs,8~hs,9~hs"><span class="font-label-caps text-label-caps text-secondary uppercase" rtrvr-ls="5~hs,6~hs,8~hs,9~hs,49~hs" rtrvr-ro="42">Factory Certifications</span><div class="flex flex-wrap gap-space-xs" rtrvr-ls="5~hs,6~hs,8~hs,9~hs"><span class="font-code-badge text-code-badge px-space-xs py-0.5 bg-surface-container border border-outline-variant rounded text-on-surface" rtrvr-ls="5~hs,6~hs,8~hs,9~hs" rtrvr-ro="42">ISO9001:2015</span><span class="font-code-badge text-code-badge px-space-xs py-0.5 bg-surface-container border border-outline-variant rounded text-on-surface" rtrvr-ls="5~hs,6~hs,8~hs,9~hs,49~hs">CE-EMC Grade A</span><span class="font-code-badge text-code-badge px-space-xs py-0.5 bg-surface-container border border-outline-variant rounded text-on-surface" rtrvr-ls="5~hs,6~hs,8~hs,9~hs" rtrvr-ro="42">RoHS 2.0</span><span class="font-code-badge text-code-badge px-space-xs py-0.5 bg-surface-container border border-outline-variant rounded text-on-surface" rtrvr-ls="5~hs,6~hs,8~hs,9~hs" rtrvr-ro="42">FCC Part 15</span></div></div></div><div class="flex flex-col gap-space-sm" rtrvr-ls="5~hs,6~hs,8~hs,9~hs"><span class="font-title-md text-title-md text-on-surface font-semibold" rtrvr-ls="5~hs,6~hs,8~hs,9~hs" rtrvr-ro="42">Product Categories</span><ul class="flex flex-col gap-space-xs" rtrvr-ls="5~hs,6~hs,8~hs,9~hs"><li class="text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer" rtrvr-ls="5~hs,6~hs,8~hs,9~hs" rtrvr-ro="42">Video Processors (4K / 8K)</li><li class="text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer" rtrvr-ls="5~hs,6~hs,8~hs,9~hs" rtrvr-ro="42">Asynchronous Controllers</li><li class="text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer" rtrvr-ls="5~hs,6~hs,8~hs,9~hs" rtrvr-ro="42">Synchronous Sending Cards</li><li class="text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer" rtrvr-ls="5~hs,6~hs,8~hs,9~hs" rtrvr-ro="42">High-Refresh Receiving Cards</li><li class="text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer" rtrvr-ls="5~hs,6~hs,8~hs,9~hs,49~hs" rtrvr-ro="42">Modular Power &amp; Hub Boards</li></ul></div><div class="flex flex-col gap-space-sm" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,23~hs,24~hs,49~hs"><span class="font-title-md text-title-md text-on-surface font-semibold" rtrvr-ls="5~hs,6~hs,8~hs,9~hs" rtrvr-ro="42">Technical Downloads</span><ul class="flex flex-col gap-space-xs" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,23~hs,24~hs"><li class="text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer" rtrvr-ls="5~hs,6~hs,8~hs,9~hs" rtrvr-ro="42">LedArt Mobile &amp; PC Software</li><li class="text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer" rtrvr-ls="5~hs,6~hs,8~hs,9~hs" rtrvr-ro="42">HD Player Suite v8.x</li><li class="text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer" rtrvr-ls="5~hs,6~hs,8~hs,9~hs" rtrvr-ro="42">FPGA Firmware Repositories</li><li class="text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer" rtrvr-ls="5~hs,6~hs,8~hs,9~hs" rtrvr-ro="42">Receiving Card RCFG Configs</li><li class="text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,23~hs,24~hs,49~hs" rtrvr-ro="42">SDK &amp; Protocol Documentation</li></ul></div><div class="flex flex-col gap-space-sm" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,12~hs,13~hs,15~hs,23~hs,24~hs"><span class="font-title-md text-title-md text-on-surface font-semibold" rtrvr-ls="5~hs,6~hs,8~hs,9~hs" rtrvr-ro="42">Factory Inquiries</span><div class="flex flex-col gap-space-xs text-body-sm font-body-sm text-on-surface-variant" rtrvr-ls="5~hs,6~hs,8~hs,9~hs"><span class="text-on-surface font-semibold" rtrvr-ls="5~hs,6~hs,8~hs,9~hs" rtrvr-ro="42">HQ &amp; Manufacturing Facility:</span><span rtrvr-ls="5~hs,6~hs,8~hs,9~hs" rtrvr-ro="42">Baoan District, High-Tech Industrial Park, Shenzhen, Guangdong, China</span><span rtrvr-ls="5~hs,6~hs,8~hs,9~hs" rtrvr-ro="42">Direct: sales@abchipled.com</span><span rtrvr-ls="5~hs,6~hs,8~hs,9~hs,49~hs" rtrvr-ro="42">Engineering: support@abchipled.com</span></div><div class="mt-space-xs flex flex-col gap-space-xs" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,12~hs,13~hs,15~hs,23~hs,24~hs"><span class="font-label-caps text-label-caps text-primary uppercase" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,12~hs,13~hs,15~hs,23~hs,24~hs" rtrvr-ro="42">Join Now</span><div class="flex gap-space-xs" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,23~hs,24~hs"><input class="w-full bg-surface-container border border-outline-variant rounded px-space-sm py-1.5 text-body-sm font-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:border-primary-container" placeholder="engineer@domain.com" type="email" rtrvr-ls="5~hs,6~hs,8~hs,9~hs,49~hs" rtrvr-ro="42"><button class="px-space-sm py-1.5 bg-surface-container-high hover:bg-primary-container hover:text-on-primary-container text-on-surface border border-outline-variant rounded transition-all text-body-sm font-body-sm font-semibold shrink-0" type="button" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,23~hs,24~hs" rtrvr-ro="38">Join</button></div></div></div></div><div class="pt-space-lg border-t border-outline-variant/30 flex flex-col sm:flex-row items-center justify-between gap-space-md text-body-sm font-body-sm text-on-surface-variant" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,12~hs,13~hs,15~hs,23~hs,24~hs,49~hs"><div class="flex items-center gap-space-sm font-code-badge text-code-badge" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,12~hs,13~hs,15~hs,23~hs,24~hs"><span rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,12~hs,13~hs,15~hs,23~hs,24~hs" rtrvr-ro="42">© 2025 Shenzhen ABCHIPLED Technology Co. Ltd. All rights reserved.</span></div><div class="flex items-center gap-space-lg" rtrvr-ls="5~hs,6~hs,8~hs,9~hs"><span class="hover:text-on-surface cursor-pointer" rtrvr-ls="5~hs,6~hs,8~hs,9~hs" rtrvr-ro="42">Privacy Policy</span><span class="hover:text-on-surface cursor-pointer" rtrvr-ls="5~hs,6~hs,8~hs,9~hs" rtrvr-ro="42">Supply Chain Transparency</span><span class="hover:text-on-surface cursor-pointer" rtrvr-ls="5~hs,6~hs,8~hs,9~hs,49~hs" rtrvr-ro="42">Hardware Warranty Terms</span></div></div></div></footer>
+
+</body></html>

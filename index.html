@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AB-CHIP & Huidu Technology — Industrial Grade LED Display & Control Systems Hardware. 4K Video Processors, Synchronous/Asynchronous Controllers, Receiving Cards, and Sizing Calculator.">
+  <title>AB-CHIP & Huidu Technology | Industrial LED Display & Control Systems</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="icon" type="image/jpeg" href="Assists/Logo.jpeg">
+  <link rel="apple-touch-icon" href="favicon.png">
+
+  <!-- Google Fonts: Plus Jakarta Sans (Headings), Inter (Technical Copy), JetBrains Mono (Specs) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Custom Industrial CSS (Zero Frameworks) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="blueprint-bg">
+
+  <!-- =================================================================
+       1. STICKY NAVIGATION HEADER
+       ================================================================= -->
+  <header class="site-header" id="site-header">
+    <div class="container header-container">
+      
+      <!-- Brand Logo Emblem -->
+      <a href="#home" class="brand-wrapper" title="AB-CHIP & Huidu Technology">
+        <img src="Assists/Logo.jpeg" alt="AB-CHIP Logo" class="brand-logo-img" onerror="this.style.display='none'; document.getElementById('logo-fallback').style.display='flex';">
+        <div id="logo-fallback" class="brand-logo-fallback" style="display: none;">AB</div>
+        <div class="brand-info">
+          <span class="brand-title">AB CHIP</span>
+          <span class="brand-subtitle">Huidu Tech • LED Control Hardware</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="main-nav" id="main-nav" aria-label="Main Navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#catalog" class="nav-link" data-cat="panels">LED Displays</a>
+        <a href="#catalog" class="nav-link" data-cat="synchronous">Control Systems</a>
+        <a href="#catalog" class="nav-link" data-cat="video-processors">Video Processors</a>
+        <a href="#catalog" class="nav-link" data-cat="accessories">Accessories</a>
+        <a href="#calculator" class="nav-link">Sizing Calculator</a>
+      </nav>
+
+      <!-- Header Action Triggers -->
+      <div class="header-actions">
+        <!-- Quick Search Trigger -->
+        <button class="btn btn-secondary btn-icon" id="header-search-btn" title="Search Hardware Catalog" aria-label="Search">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </button>
+
+        <!-- Quote Cart Trigger Button -->
+        <button class="cart-btn" id="header-cart-btn" aria-label="Open Quote Cart">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+          <span class="cart-btn-label">Quote Cart</span>
+          <span class="cart-badge" id="cart-counter">0</span>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="hamburger-btn" id="mobile-menu-btn" aria-label="Toggle navigation menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Navigation Panel -->
+    <div class="mobile-nav-panel" id="mobile-nav-panel">
+      <a href="#home" class="mobile-nav-link active">Home</a>
+      <a href="#catalog" class="mobile-nav-link" data-cat="all">Complete Product Catalog</a>
+      <a href="#catalog" class="mobile-nav-link" data-cat="video-processors">Video Processors (HD-VP)</a>
+      <a href="#catalog" class="mobile-nav-link" data-cat="synchronous">Synchronous Controllers (T-Series)</a>
+      <a href="#catalog" class="mobile-nav-link" data-cat="asynchronous">Async & Wi-Fi Players (A/C/W)</a>
+      <a href="#catalog" class="mobile-nav-link" data-cat="receiving-cards">Receiving Cards (R50X/R612)</a>
+      <a href="#calculator" class="mobile-nav-link">Interactive LED Sizing Tool</a>
+      <a href="#scenarios" class="mobile-nav-link">Application Scenarios</a>
+      <a href="#footer" class="mobile-nav-link">Technical Support & SDK</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- =================================================================
+         2. HERO SECTION: High-Contrast Dark Slate Split Banner
+         ================================================================= -->
+    <section class="hero-section" id="home">
+      <div class="hero-glow-blob"></div>
+      <div class="container hero-grid">
+        
+        <!-- Left Content -->
+        <div class="hero-content">
+          <div class="hero-status-strip">
+            <span class="tech-badge primary">
+              <span class="status-dot"></span>
+              SHENZHEN ABCHIPLED TECH • CARRIER GRADE HARDWARE
+            </span>
+          </div>
+
+          <h1 class="hero-title">
+            Next-Generation <span class="highlight-blue">LED Display Solutions</span> &amp; Control Hardware
+          </h1>
+
+          <p class="hero-subtitle">
+            Engineering high-performance synchronous/asynchronous sending architectures, 4K multi-window video processors, high-refresh receiving cards, and ultra-high-definition modular LED display cabinets for stadium arenas, smart billboard clusters, and mission-critical command installations.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#catalog" class="btn btn-primary">
+              <span>Explore Product Catalog</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="#calculator" class="btn btn-secondary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"></rect><line x1="8" y1="6" x2="16" y2="6"></line><line x1="16" y1="14" x2="16" y2="18"></line><path d="M16 10h.01"></path><path d="M12 10h.01"></path><path d="M8 10h.01"></path><path d="M12 14h.01"></path><path d="M8 14h.01"></path><path d="M12 18h.01"></path><path d="M8 18h.01"></path></svg>
+              <span>Launch LED Sizing Tool</span>
+            </a>
+            <div class="tech-badge green" style="padding: 0.55rem 0.85rem;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span>Shenzhen Direct: +86-755-8823</span>
+            </div>
+          </div>
+
+          <!-- Quick Hardware Metrics Spec Row -->
+          <div class="hero-metrics-bar">
+            <div class="metric-card">
+              <span class="metric-label">Max Capacity</span>
+              <span class="metric-value blue">10.4M px</span>
+              <span class="metric-sub">HD-VP1620 Flagship</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-label">Scan Modes</span>
+              <span class="metric-value green">1/64 Scan</span>
+              <span class="metric-sub">Static to PWM IC</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-label">Frame Rate</span>
+              <span class="metric-value">60Hz Real</span>
+              <span class="metric-sub">Hardware Hard Decode</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-label">Latency</span>
+              <span class="metric-value blue">&lt; 1 Frame</span>
+              <span class="metric-sub">DVI / Gigabit RJ45</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Visual Showcase: 3D Modular LED Cabinet Rig -->
+        <div class="hero-visual">
+          <div class="chassis-rig">
+            <!-- Rig Header Telemetry -->
+            <div class="rig-header">
+              <div class="rig-telemetry">
+                <span class="status-dot"></span>
+                <span>SYS_FPGA_STATUS: LOCKED (60.0 FPS)</span>
+              </div>
+              <div class="rig-clock mono">10.4M PX BUS • ONLINE</div>
+            </div>
+
+            <!-- Simulated 3D Modular LED Cabinet Display -->
+            <div class="cabinet-stage">
+              <div class="led-matrix-sim" id="cabinet-matrix">
+                <!-- 8 Interactive Modular Cabinet Tiles -->
+                <div class="led-cabinet-tile"><span class="tile-id">CAB_01</span><span class="tile-indicator"></span></div>
+                <div class="led-cabinet-tile"><span class="tile-id">CAB_02</span><span class="tile-indicator"></span></div>
+                <div class="led-cabinet-tile"><span class="tile-id">CAB_03</span><span class="tile-indicator"></span></div>
+                <div class="led-cabinet-tile"><span class="tile-id">CAB_04</span><span class="tile-indicator"></span></div>
+                <div class="led-cabinet-tile"><span class="tile-id">CAB_05</span><span class="tile-indicator"></span></div>
+                <div class="led-cabinet-tile"><span class="tile-id">CAB_06</span><span class="tile-indicator"></span></div>
+                <div class="led-cabinet-tile"><span class="tile-id">CAB_07</span><span class="tile-indicator"></span></div>
+                <div class="led-cabinet-tile"><span class="tile-id">CAB_08</span><span class="tile-indicator"></span></div>
+
+                <!-- Overlay Hologram Information -->
+                <div class="screen-live-content">
+                  <div class="live-badge">HD-VP1620 4K CASCADE ACTIVE</div>
+                  <div class="live-spec">3840Hz REFRESH • 16× GIGABIT RJ45</div>
+                </div>
+              </div>
+
+              <!-- Real-time Hardware Telemetry Strip -->
+              <div class="rig-footer-bar">
+                <div class="rig-stat-box">
+                  <div class="stat-box-title">CONTROLLER</div>
+                  <div class="stat-box-val" style="color: #60a5fa;">HD-VP1620</div>
+                </div>
+                <div class="rig-stat-box">
+                  <div class="stat-box-title">RECEIVING CARD</div>
+                  <div class="stat-box-val" style="color: var(--accent-green-bright);">HD-R512S PWM</div>
+                </div>
+                <div class="rig-stat-box">
+                  <div class="stat-box-title">CLOUD SUITE</div>
+                  <div class="stat-box-val">LedArt v8.2</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =================================================================
+         3. INTERACTIVE PRODUCT CATALOG & LIVE FILTER
+         ================================================================= -->
+    <section class="catalog-section" id="catalog">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header">
+          <div class="section-label">
+            <span>OFFICIAL HARDWARE ECOSYSTEM</span>
+            <span class="line"></span>
+          </div>
+          <h2 class="section-title">Standardized Hardware Catalog &amp; Controller Series</h2>
+          <p class="section-desc">
+            Directly derived from AB-CHIP &amp; Huidu Technology engineering matrix tables. Explore synchronized senders, cloud players, high-refresh receiving cards, and turnkey video processors.
+          </p>
+        </div>
+
+        <!-- Filter & Search Controls Bar -->
+        <div class="catalog-controls">
+          <div class="search-and-stats">
+            <div class="search-box-wrapper">
+              <span class="search-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+              </span>
+              <input type="text" id="catalog-search" class="catalog-search-input" placeholder="Search by model (e.g. VP1620, R512S, T901, W62)..." autocomplete="off">
+              <button id="search-clear-btn" class="search-clear-btn" aria-label="Clear search">&times;</button>
+            </div>
+
+            <div class="catalog-stats-strip">
+              <span>Showing: <strong id="catalog-count-display">0</strong> SKUs</span>
+              <span class="tech-badge green">Factory Stock: Verified</span>
+            </div>
+          </div>
+
+          <!-- Category Filter Tabs -->
+          <div class="category-tabs" id="category-tabs-container">
+            <button class="cat-tab-btn active" data-category="all">All Hardware (<span id="cat-count-all">0</span>)</button>
+            <button class="cat-tab-btn" data-category="video-processors">Video Processors (<span id="cat-count-vp">0</span>)</button>
+            <button class="cat-tab-btn" data-category="synchronous">Synchronous Controllers (<span id="cat-count-sync">0</span>)</button>
+            <button class="cat-tab-btn" data-category="asynchronous">Async &amp; Wi-Fi Players (<span id="cat-count-async">0</span>)</button>
+            <button class="cat-tab-btn" data-category="receiving-cards">Receiving Cards (<span id="cat-count-recv">0</span>)</button>
+            <button class="cat-tab-btn" data-category="accessories">Accessories &amp; Sensors (<span id="cat-count-acc">0</span>)</button>
+            <button class="cat-tab-btn" data-category="panels">LED Cabinets (<span id="cat-count-panels">0</span>)</button>
+          </div>
+        </div>
+
+        <!-- Dynamic Product Cards Grid -->
+        <div class="products-grid" id="products-grid">
+          <!-- Populated dynamically via script.js from products.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =================================================================
+         4. INTERACTIVE LED SCREEN SIZING CALCULATOR
+         ================================================================= -->
+    <section class="calculator-section" id="calculator">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header">
+          <div class="section-label">
+            <span style="color: var(--accent-green-bright);">ENGINEERING SIZING ENGINE</span>
+            <span class="line" style="background: var(--accent-green-bright);"></span>
+          </div>
+          <h2 class="section-title">Interactive LED Screen Sizing &amp; Hardware Calculator</h2>
+          <p class="section-desc">
+            Calculate total pixel loading, network port distribution, recommended video processor model, and receiving card counts in real time.
+          </p>
+        </div>
+
+        <div class="calc-grid">
+          
+          <!-- Input Form Side -->
+          <div class="calc-card-inputs">
+            <!-- Mode Switch Tabs -->
+            <div class="calc-mode-switch">
+              <button class="mode-btn active" id="calc-mode-res">1. Direct Pixel Resolution</button>
+              <button class="mode-btn" id="calc-mode-dim">2. Physical Dimensions &amp; Pitch</button>
+            </div>
+
+            <!-- Resolution Inputs (Default Mode) -->
+            <div id="calc-res-inputs">
+              <div class="calc-group">
+                <label class="calc-label" for="calc-pixel-width">
+                  <span>Display Pixel Width</span>
+                  <span class="sub">Total Horizontal Pixels</span>
+                </label>
+                <div class="input-with-unit">
+                  <input type="number" id="calc-pixel-width" class="calc-input" value="1920" min="64" max="16000" step="16">
+                  <span class="unit-tag">PX W</span>
+                </div>
+              </div>
+
+              <div class="calc-group">
+                <label class="calc-label" for="calc-pixel-height">
+                  <span>Display Pixel Height</span>
+                  <span class="sub">Total Vertical Pixels</span>
+                </label>
+                <div class="input-with-unit">
+                  <input type="number" id="calc-pixel-height" class="calc-input" value="1080" min="32" max="4096" step="16">
+                  <span class="unit-tag">PX H</span>
+                </div>
+              </div>
+
+              <!-- Preset Resolution Chips -->
+              <div class="calc-group">
+                <div class="calc-label"><span>Standard Resolution Presets:</span></div>
+                <div class="preset-chips-row">
+                  <button type="button" class="preset-chip" data-w="1920" data-h="1080">Full HD (1920×1080)</button>
+                  <button type="button" class="preset-chip" data-w="2560" data-h="1440">2K QHD (2560×1440)</button>
+                  <button type="button" class="preset-chip" data-w="3840" data-h="2160">4K UHD (3840×2160)</button>
+                  <button type="button" class="preset-chip" data-w="5120" data-h="1440">Ultrawide (5120×1440)</button>
+                  <button type="button" class="preset-chip" data-w="1024" data-h="128">Lintel Banner (1024×128)</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Physical Dimensions & Pitch Mode (Hidden by default) -->
+            <div id="calc-dim-inputs" style="display: none;">
+              <div class="calc-group">
+                <label class="calc-label" for="calc-physical-width">
+                  <span>Screen Physical Width (Meters)</span>
+                  <span class="sub">Horizontal dimension</span>
+                </label>
+                <div class="input-with-unit">
+                  <input type="number" id="calc-physical-width" class="calc-input" value="4.8" min="0.5" max="100" step="0.1">
+                  <span class="unit-tag">Meters</span>
+                </div>
+              </div>
+
+              <div class="calc-group">
+                <label class="calc-label" for="calc-physical-height">
+                  <span>Screen Physical Height (Meters)</span>
+                  <span class="sub">Vertical dimension</span>
+                </label>
+                <div class="input-with-unit">
+                  <input type="number" id="calc-physical-height" class="calc-input" value="2.7" min="0.5" max="50" step="0.1">
+                  <span class="unit-tag">Meters</span>
+                </div>
+              </div>
+
+              <div class="calc-group">
+                <label class="calc-label" for="calc-pitch-select">
+                  <span>LED Module Pixel Pitch</span>
+                  <span class="sub">Pitch determines density</span>
+                </label>
+                <select id="calc-pitch-select" class="calc-select">
+                  <option value="1.25">P1.25 (Ultra Fine-Pitch Broadcast)</option>
+                  <option value="1.56">P1.56 (High-Density Conference Room)</option>
+                  <option value="1.86">P1.86 (Commercial Fine-Pitch)</option>
+                  <option value="2.0">P2.0 (Auditorium & Worship)</option>
+                  <option value="2.5" selected>P2.5 (Standard Indoor Commercial)</option>
+                  <option value="3.07">P3.07 (Cost-Effective Indoor Panel)</option>
+                  <option value="3.91">P3.91 (Stage Rental & Touring Dual-Use)</option>
+                  <option value="4.81">P4.81 (Outdoor Stage & Events)</option>
+                  <option value="5.0">P5.0 (Outdoor Commercial Billboard)</option>
+                  <option value="6.0">P6.0 (Outdoor Advertising Sign)</option>
+                  <option value="10.0">P10.0 (Heavy Highway Billboard)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="calc-group" style="margin-top: 1.5rem; border-top: 1px dashed var(--border-color); padding-top: 1rem;">
+              <label class="calc-label" for="calc-cabinet-type">
+                <span>Cabinet Modular Form Factor</span>
+              </label>
+              <select id="calc-cabinet-type" class="calc-select">
+                <option value="640x480">Standard Die-Cast Aluminum (640mm × 480mm)</option>
+                <option value="500x500">Rental Touring Square (500mm × 500mm)</option>
+                <option value="500x1000">Rental High Panel (500mm × 1000mm)</option>
+                <option value="960x960">Outdoor Heavy Steel Cabinet (960mm × 960mm)</option>
+              </select>
+            </div>
+
+          </div>
+
+          <!-- Results Engineering Telemetry Panel -->
+          <div class="calc-card-results">
+            <div class="calc-results-header">
+              <span class="tech-badge primary">HARDWARE SIZING COMPUTATION</span>
+              <span class="mono" style="font-size: 0.75rem; color: var(--accent-green-bright);">60Hz FRAME LOCKED</span>
+            </div>
+
+            <!-- Big Pixel Total Hero -->
+            <div class="pixel-load-hero">
+              <div class="pixel-load-label">TOTAL DISPLAY PIXEL LOAD</div>
+              <div class="pixel-load-digits" id="calc-total-pixels">2,073,600</div>
+              <div class="pixel-aspect-ratio" id="calc-aspect-ratio">Aspect Ratio: 16:9 • Standard FHD 1080P</div>
+            </div>
+
+            <!-- Recommended Hardware Output Cards -->
+            <div class="recommended-bundle-box">
+              
+              <!-- Video Processor Recommendation -->
+              <div class="bundle-item-card">
+                <span class="bundle-item-type">Recommended Video Processor</span>
+                <span class="bundle-item-model" id="rec-processor-name">HD-VP410</span>
+                <span class="bundle-item-meta" id="rec-processor-meta">2.6M Capacity • 4× Gigabit RJ45</span>
+                
+                <div class="load-gauge-bar">
+                  <div class="load-gauge-fill" id="rec-processor-gauge" style="width: 80%;"></div>
+                </div>
+                <div style="display: flex; justify-content: space-between; font-size: 0.6875rem; color: var(--text-dim); margin-top: 2px;">
+                  <span>Processor Load</span>
+                  <span id="rec-processor-load-pct">80% Utilization</span>
+                </div>
+              </div>
+
+              <!-- Receiving Cards Recommendation -->
+              <div class="bundle-item-card">
+                <span class="bundle-item-type">Receiving Cards Required</span>
+                <span class="bundle-item-model" id="rec-rc-name">HD-R512S PWM</span>
+                <span class="bundle-item-meta" id="rec-rc-count">32 Units Required (1 per cabinet)</span>
+                
+                <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.35rem;">
+                  12× HUB75E per card • 3840Hz Refresh
+                </div>
+              </div>
+
+            </div>
+
+            <!-- System Technical Checklist -->
+            <div class="specs-checklist-grid">
+              <div class="check-item">
+                <span class="check-item-title">Gigabit RJ45 Cables</span>
+                <span class="check-item-value" id="calc-cables-needed">4 Network Lines</span>
+              </div>
+              <div class="check-item">
+                <span class="check-item-title">Estimated Power Draw</span>
+                <span class="check-item-value" id="calc-power-estimate">Avg 2.4 kW / Peak 7.1 kW</span>
+              </div>
+              <div class="check-item">
+                <span class="check-item-title">Total Display Area</span>
+                <span class="check-item-value" id="calc-area-estimate">12.96 m²</span>
+              </div>
+            </div>
+
+            <!-- Action Button: Add bundle to quote -->
+            <button class="btn btn-rfq" id="calc-add-bundle-btn" style="width: 100%; padding: 0.85rem;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+              <span>Add Recommended Hardware Bundle to Quote</span>
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =================================================================
+         5. COMMERCIAL DEPLOYMENT SCENARIOS (4 PILLARS)
+         ================================================================= -->
+    <section class="scenarios-section" id="scenarios">
+      <div class="container">
+        
+        <!-- Header -->
+        <div class="section-header" style="text-align: center; align-items: center;">
+          <div class="section-label">
+            <span style="color: #60a5fa;">DEPLOYMENT ARCHITECTURES</span>
+          </div>
+          <h2 class="section-title">Engineered for Demanding Commercial Environments</h2>
+          <p class="section-desc">
+            From live touring concerts demanding zero audio-visual desynchronization to solar-exposed highway billboards operating 24/7/365 under severe weather monitoring.
+          </p>
+        </div>
+
+        <div class="scenarios-grid">
+          
+          <!-- Pillar 1: Stage & Live Broadcast -->
+          <div class="scenario-card">
+            <div class="scenario-img-wrapper">
+              <span class="scenario-badge">LIVE STAGE</span>
+              <div class="scenario-icon-lead">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg>
+              </div>
+            </div>
+            <div class="scenario-content">
+              <h3 class="scenario-title">Stage &amp; Live Broadcast</h3>
+              <p class="scenario-desc">
+                Zero-latency DVI synchronous pipelines using T901/T902x1 controllers combined with HD-R512S receiving cards delivering 3840Hz refresh for moiré-free broadcast filming.
+              </p>
+              <div class="scenario-stack">Spec: T901 + R512S PWM • 3840Hz</div>
+            </div>
+          </div>
+
+          <!-- Pillar 2: Highway & Billboard DOOH -->
+          <div class="scenario-card">
+            <div class="scenario-img-wrapper">
+              <span class="scenario-badge" style="color: var(--accent-green-bright);">COMMERCIAL DOOH</span>
+              <div class="scenario-icon-lead">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+              </div>
+            </div>
+            <div class="scenario-content">
+              <h3 class="scenario-title">Highway &amp; Billboard DOOH</h3>
+              <p class="scenario-desc">
+                Asynchronous cloud scheduling via 4G/Wi-Fi with A-Series players. Direct integration with S107 light sensors for automated solar daylight dimming and K524 relay shutdown.
+              </p>
+              <div class="scenario-stack">Spec: A5/A6 + S107 Auto-Dimming</div>
+            </div>
+          </div>
+
+          <!-- Pillar 3: Command & NOC Rooms -->
+          <div class="scenario-card">
+            <div class="scenario-img-wrapper">
+              <span class="scenario-badge">COMMAND &amp; NOC</span>
+              <div class="scenario-icon-lead">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+              </div>
+            </div>
+            <div class="scenario-content">
+              <h3 class="scenario-title">Command &amp; Control Rooms</h3>
+              <p class="scenario-desc">
+                Sub-1mm fine pixel pitch modules driven by HD-VP820 &amp; HD-VP1620 processors supporting 4K multi-window picture-in-picture, seamless preset recalling, and low grayscale detail.
+              </p>
+              <div class="scenario-stack">Spec: HD-VP1620 + R612 HDR</div>
+            </div>
+          </div>
+
+          <!-- Pillar 4: Storefront & Lintel Tickers -->
+          <div class="scenario-card">
+            <div class="scenario-img-wrapper">
+              <span class="scenario-badge">DOOR LINTEL</span>
+              <div class="scenario-icon-lead">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="7" width="18" height="10" rx="2"></rect><line x1="7" y1="12" x2="17" y2="12"></line></svg>
+              </div>
+            </div>
+            <div class="scenario-content">
+              <h3 class="scenario-title">Storefront &amp; Lintel Tickers</h3>
+              <p class="scenario-desc">
+                Cost-effective W-Series Wi-Fi and U-Disk cards (W60, W62, W64, D05) allowing instant mobile LedArt updates for scrolling text, border animations, and environmental temperature stats.
+              </p>
+              <div class="scenario-stack">Spec: W62-75 + Direct HUB75</div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =================================================================
+         6. CREDIBILITY & INDUSTRIAL TESTING STANDARDS STRIP
+         ================================================================= -->
+    <section class="testing-strip">
+      <div class="container">
+        <div class="testing-grid">
+          
+          <div class="test-badge-box">
+            <div class="test-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            </div>
+            <div class="test-info">
+              <h4>48-Hr Thermal Burn-in</h4>
+              <p>100% factory full-load burn-in tested</p>
+            </div>
+          </div>
+
+          <div class="test-badge-box">
+            <div class="test-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+            </div>
+            <div class="test-info">
+              <h4>SMT High-Speed Lines</h4>
+              <p>Shenzhen Baoan industrial facility</p>
+            </div>
+          </div>
+
+          <div class="test-badge-box">
+            <div class="test-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <div class="test-info">
+              <h4>CE, FCC, RoHS Class A</h4>
+              <p>EMC electromagnetic compliance</p>
+            </div>
+          </div>
+
+          <div class="test-badge-box">
+            <div class="test-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            </div>
+            <div class="test-info">
+              <h4>Direct SDK Downloads</h4>
+              <p>HDPlayer, LedArt, RCFG firmware</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =================================================================
+       7. SLIDE-OVER INQUIRY CART DRAWER
+       ================================================================= -->
+  <div class="drawer-backdrop" id="drawer-backdrop"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-labelledby="drawer-title" aria-hidden="true">
+    
+    <!-- Drawer Header -->
+    <div class="drawer-header">
+      <div class="drawer-title" id="drawer-title">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+        <span>Hardware Inquiry Cart (<span id="drawer-cart-count">0</span>)</span>
+      </div>
+      <button class="drawer-close-btn" id="drawer-close-btn" aria-label="Close Inquiry Drawer">&times;</button>
+    </div>
+
+    <!-- Drawer Body -->
+    <div class="drawer-body">
+      <!-- Itemized Cart List -->
+      <div class="cart-items-list" id="cart-items-list">
+        <!-- Rendered dynamically -->
+      </div>
+
+      <!-- Empty Cart Message -->
+      <div class="cart-empty-message" id="cart-empty-state">
+        <div class="cart-empty-icon">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+        </div>
+        <div style="font-weight: 600; color: #ffffff;">Your Quote Cart is Empty</div>
+        <p style="font-size: 0.8125rem; color: var(--text-dim);">
+          Add controllers, video processors, or receiving cards from the catalog or sizing tool to request wholesale pricing.
+        </p>
+        <button class="btn btn-secondary btn-sm" id="empty-cart-browse-btn">Browse Hardware Catalog</button>
+      </div>
+
+      <!-- B2B Quote Inquiry Form (Shown when cart has items) -->
+      <div class="rfq-form-container" id="rfq-form-container" style="display: none;">
+        <div class="rfq-form-title">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+          <span>Commercial RFQ Submission Form</span>
+        </div>
+
+        <form id="rfq-form" novalidate>
+          <div class="rfq-form-row">
+            <label class="rfq-form-label" for="rfq-company">Company / Organization *</label>
+            <input type="text" id="rfq-company" class="rfq-input" placeholder="e.g. Apex Visual Systems Ltd" required>
+          </div>
+
+          <div class="rfq-form-row">
+            <label class="rfq-form-label" for="rfq-name">Contact Person *</label>
+            <input type="text" id="rfq-name" class="rfq-input" placeholder="e.g. David Lin" required>
+          </div>
+
+          <div class="rfq-form-row">
+            <label class="rfq-form-label" for="rfq-email">Business Work Email *</label>
+            <input type="email" id="rfq-email" class="rfq-input" placeholder="engineer@domain.com" required>
+          </div>
+
+          <div class="rfq-form-row">
+            <label class="rfq-form-label" for="rfq-phone">Phone / WhatsApp *</label>
+            <input type="tel" id="rfq-phone" class="rfq-input" placeholder="+1 (555) 000-0000" required>
+          </div>
+
+          <div class="rfq-form-row">
+            <label class="rfq-form-label" for="rfq-timeline">Project Delivery Requirement</label>
+            <select id="rfq-timeline" class="rfq-select">
+              <option value="immediate">Immediate Dispatch (In Stock)</option>
+              <option value="2weeks">Within 2 Weeks</option>
+              <option value="1month">1 Month (Tender / Project Planning)</option>
+              <option value="samples">Sample Testing Evaluation</option>
+            </select>
+          </div>
+
+          <div class="rfq-form-row">
+            <label class="rfq-form-label" for="rfq-notes">Project Specifications / Notes</label>
+            <textarea id="rfq-notes" class="rfq-textarea" placeholder="Include target screen pitch, total dimensions, or specific FPGA requirement..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-rfq" style="width: 100%; margin-top: 0.5rem; padding: 0.75rem;">
+            <span>Submit B2B Quote Inquiry</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Drawer Footer Summary -->
+    <div class="drawer-footer" id="drawer-footer" style="display: none;">
+      <div class="drawer-summary-line">
+        <span>Total Hardware Items:</span>
+        <strong id="drawer-total-qty">0 Units</strong>
+      </div>
+      <div class="drawer-summary-line">
+        <span>Delivery Route:</span>
+        <span class="mono" style="color: var(--accent-green-bright); font-size: 0.8125rem;">Shenzhen Ex-Factory / DHL Air</span>
+      </div>
+    </div>
+
+  </aside>
+
+  <!-- =================================================================
+       8. INTERACTIVE TECHNICAL SPEC MODAL
+       ================================================================= -->
+  <div class="modal-backdrop" id="spec-modal-backdrop" aria-hidden="true">
+    <div class="spec-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-model-title">
+      
+      <!-- Modal Header -->
+      <div class="spec-modal-header">
+        <div class="spec-modal-title-box">
+          <div class="spec-modal-model" id="modal-model-title">HD-VP1620</div>
+          <div class="spec-modal-tagline" id="modal-tagline">4K Flagship Ultra-HD 16-Port LED Video Processor</div>
+        </div>
+        <button class="drawer-close-btn" id="modal-close-btn" aria-label="Close Specification Modal">&times;</button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="spec-modal-body">
+        
+        <!-- Quick Specs Strip -->
+        <div class="specs-checklist-grid" id="modal-quick-chips">
+          <!-- Dynamically inserted -->
+        </div>
+
+        <!-- Full Technical Spec Table -->
+        <div>
+          <div style="font-family: var(--font-mono); font-size: 0.75rem; text-transform: uppercase; color: var(--text-dim); margin-bottom: 0.5rem;">
+            Official Engineering Parameter Matrix
+          </div>
+          <table class="spec-modal-table">
+            <tbody id="modal-table-body">
+              <!-- Dynamically populated -->
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Recommended Applications Callout -->
+        <div style="background: var(--surface-container); border-left: 3px solid var(--primary-blue-light); padding: 0.75rem 1rem; border-radius: 0 var(--radius-sm) var(--radius-sm) 0; font-size: 0.8125rem;">
+          <strong style="color: #ffffff; display: block; margin-bottom: 2px;">Deployment Recommendation:</strong>
+          <span id="modal-recommended-text" style="color: var(--text-muted);">Broadcast studios, arenas, stadiums</span>
+        </div>
+
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="spec-modal-footer">
+        <button class="btn btn-secondary btn-sm" id="modal-datasheet-btn">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          <span>Download Datasheet PDF</span>
+        </button>
+
+        <button class="btn btn-primary" id="modal-add-cart-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+          <span>Add to Quote Inquiry</span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- =================================================================
+       9. RFQ CONFIRMATION RECEIPT MODAL
+       ================================================================= -->
+  <div class="modal-backdrop" id="receipt-modal-backdrop" aria-hidden="true">
+    <div class="receipt-modal-dialog">
+      <div class="receipt-icon">
+        <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+      </div>
+
+      <h3 style="font-size: 1.5rem; color: #ffffff;">Quote Inquiry Dispatched</h3>
+      <p style="font-size: 0.875rem; color: var(--text-muted);">
+        Your commercial hardware RFQ has been logged and transmitted to AB-CHIP Shenzhen Sales &amp; Engineering team.
+      </p>
+
+      <div>
+        <span style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-dim); display: block;">Official Tracking Reference</span>
+        <span class="receipt-id-badge" id="receipt-rfq-id">RFQ-AB-2026-8842</span>
+      </div>
+
+      <div class="receipt-summary-ledger" id="receipt-summary-ledger">
+        <!-- Injected dynamically -->
+      </div>
+
+      <div style="display: flex; gap: 0.75rem; justify-content: center; margin-top: 0.5rem;">
+        <button class="btn btn-secondary btn-sm" id="receipt-print-btn">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+          <span>Print / Save RFQ Record</span>
+        </button>
+        <button class="btn btn-primary btn-sm" id="receipt-close-btn">Done</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================================================================
+       10. FLOATING TOAST NOTIFICATION CONTAINER
+       ================================================================= -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- =================================================================
+       11. PROFESSIONAL B2B FOOTER
+       ================================================================= -->
+  <footer class="site-footer" id="footer">
+    <div class="container">
+      
+      <div class="footer-top-grid">
+        
+        <!-- Brand Info Column -->
+        <div class="footer-brand-col">
+          <div style="display: flex; align-items: center; gap: 0.75rem;">
+            <img src="Assists/Logo.jpeg" alt="AB-CHIP Logo" class="brand-logo-img" style="width: 38px; height: 38px;">
+            <div>
+              <div style="font-family: var(--font-heading); font-weight: 800; font-size: 1.1rem; color: #ffffff;">AB CHIP</div>
+              <div class="mono" style="font-size: 0.65rem; color: var(--text-dim);">Huidu Technology Co., Ltd.</div>
+            </div>
+          </div>
+          <p class="footer-desc">
+            Industrial-grade optoelectronic hardware, specialized control topologies, synchronous/asynchronous sending architectures, and ultra-low latency LED video processing solutions for system integrators worldwide.
+          </p>
+          <div style="display: flex; flex-wrap: gap; gap: 0.4rem; margin-top: 0.5rem;">
+            <span class="tech-badge">ISO9001:2015</span>
+            <span class="tech-badge">CE-EMC Grade A</span>
+            <span class="tech-badge">RoHS 2.0</span>
+            <span class="tech-badge">FCC Part 15</span>
+          </div>
+        </div>
+
+        <!-- Product Categories Column -->
+        <div class="footer-links-col">
+          <h4>Hardware Categories</h4>
+          <ul class="footer-links-list">
+            <li><a href="#catalog" class="footer-link" data-cat="video-processors">Video Processors (HD-VP)</a></li>
+            <li><a href="#catalog" class="footer-link" data-cat="synchronous">Synchronous Senders (T901/T902)</a></li>
+            <li><a href="#catalog" class="footer-link" data-cat="asynchronous">Async Cloud Players (A/C/D)</a></li>
+            <li><a href="#catalog" class="footer-link" data-cat="receiving-cards">Receiving Cards (R50X/R612)</a></li>
+            <li><a href="#catalog" class="footer-link" data-cat="accessories">Smart Weather Sensors &amp; 4G</a></li>
+            <li><a href="#catalog" class="footer-link" data-cat="panels">Modular LED Display Cabinets</a></li>
+          </ul>
+        </div>
+
+        <!-- Engineering Downloads Column -->
+        <div class="footer-links-col">
+          <h4>Technical Software</h4>
+          <ul class="footer-links-list">
+            <li><a href="javascript:void(0)" class="footer-link software-trigger" data-tool="LedArt">LedArt Mobile App v8.2</a></li>
+            <li><a href="javascript:void(0)" class="footer-link software-trigger" data-tool="HDPlayer">HDPlayer Synchronous Suite</a></li>
+            <li><a href="javascript:void(0)" class="footer-link software-trigger" data-tool="HD2020">HD2020 Single/Dual Color</a></li>
+            <li><a href="javascript:void(0)" class="footer-link software-trigger" data-tool="RCFG">Receiving Card RCFG Tools</a></li>
+            <li><a href="javascript:void(0)" class="footer-link software-trigger" data-tool="SDK">Open API &amp; SDK Protocols</a></li>
+          </ul>
+        </div>
+
+        <!-- Factory Contact Column -->
+        <div class="footer-links-col">
+          <h4>Factory Contact</h4>
+          <div class="footer-contact-info">
+            <div class="contact-row">
+              <span class="contact-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </span>
+              <span>Baoan High-Tech Industrial Park, Shenzhen, Guangdong, China</span>
+            </div>
+            <div class="contact-row">
+              <span class="contact-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </span>
+              <span>sales@abchipled.com | support@abchipled.com</span>
+            </div>
+            <div class="contact-row">
+              <span class="contact-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </span>
+              <span>Direct Phone: +86-755-8823</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Legal Row -->
+      <div class="footer-bottom-bar">
+        <div class="mono">
+          &copy; 2026 Shenzhen ABCHIPLED Technology Co., Ltd. &amp; Huidu Technology. All rights reserved.
+        </div>
+        <div class="footer-legal-links">
+          <a href="javascript:void(0)" class="footer-link">Hardware Warranty Terms (3 Years)</a>
+          <a href="javascript:void(0)" class="footer-link">Supply Chain Transparency</a>
+          <a href="javascript:void(0)" class="footer-link">Privacy Policy</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- =================================================================
+       SCRIPTS: products.js (Data layer) followed by script.js (Controller)
+       ================================================================= -->
+  <script src="products.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
